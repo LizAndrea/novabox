@@ -1,3 +1,11 @@
+/**
+ * Base de datos local (MOCK) de productos para NovaBox.
+ * Cada objeto dentro de este array representa un producto que se mostrará en la tienda.
+ * Campos clave:
+ * - price: Precio normal o tachado (si hay un min_price menor).
+ * - min_price: Precio de oferta o desde donde parte el costo (opcional).
+ * - category: Determina en qué sección aparece al filtrar.
+ */
 const PRODUCTS = [
   {
     "id": "1",

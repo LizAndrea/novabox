@@ -1,14 +1,22 @@
-// script.js
+/**
+ * script.js
+ * Archivo principal que maneja la lógica de la interfaz de usuario.
+ * Depende de la variable global `PRODUCTS` definida en data.js.
+ */
 
-// Assumes `PRODUCTS` is loaded from data.js
-let activeBrand = 'all';
-let searchQuery = '';
-let CATEGORIES_DATA = null;
+// Estado global de la aplicación
+let activeBrand = 'all'; // Categoría actualmente seleccionada ('all' = todas)
+let searchQuery = '';    // Término de búsqueda actual
+let CATEGORIES_DATA = null; // Datos de categorías (cargados dinámicamente)
 
 function conditionBadge(c) {
   return `<span class="bg-ice-grey text-white text-xs font-bold px-3 py-1 rounded-full">${c}</span>`;
 }
 
+/**
+ * Renderiza la lista de productos en el contenedor principal (#listingsContainer).
+ * Aplica los filtros de búsqueda y categoría activos.
+ */
 function renderPhones() {
   const container = document.getElementById('listingsContainer');
   const noRes = document.getElementById('noResults');
@@ -111,6 +119,11 @@ function renderPhones() {
   container.innerHTML = html;
 }
 
+/**
+ * Abre la ventana modal con los detalles completos de un producto específico.
+ * También actualiza el SEO dinámicamente (title y meta description).
+ * @param {string|number} id - El identificador único del producto.
+ */
 function openDetail(id) {
   const p = PRODUCTS.find(x => x.id == id);
   if (!p) return;
@@ -196,6 +209,10 @@ function openDetail(id) {
   }
 }
 
+/**
+ * Cierra la ventana modal de detalles del producto
+ * y restaura el SEO por defecto.
+ */
 function closeDetail() {
   document.getElementById('detailModal').classList.add('hidden');
   document.getElementById('detailModal').classList.remove('flex');
@@ -216,6 +233,11 @@ window.addEventListener('popstate', (e) => {
   }
 });
 
+/**
+ * Redirige al usuario a WhatsApp con un mensaje predefinido 
+ * para consultar o pedir un producto específico.
+ * @param {string|number} id - El identificador único del producto.
+ */
 function sendToWhatsApp(id) {
   const p = PRODUCTS.find(x => x.id == id);
   if (!p) return;

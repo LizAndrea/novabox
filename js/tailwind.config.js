@@ -1,3 +1,9 @@
+/**
+ * Configuración de Tailwind CSS.
+ * Extiende la paleta de colores nativa con los colores corporativos "Dark Tech" de NovaBox.
+ * NOTA: Aunque las variables conservan nombres de tonos tierra (ej. deep-coffee),
+ * sus valores (hex) han sido modificados para un estilo tecnológico moderno y oscuro (Dark Mode).
+ */
 tailwind.config = {
     theme: {
         extend: {
