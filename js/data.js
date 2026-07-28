@@ -312,7 +312,7 @@ const PRODUCTS = [
     "instructions": "1. Insertar pilas en la cajita. 2. Cambiar interruptor a ON o modo parpadeo.",
     "warnings": "Uso preferente en interiores (caja de pilas no sumergible).",
     "fun_fact": "Los LED consumen tan poco que un par de pilas dura semanas encendido.",
-    "image": ""
+    "image": "assets/images/productos/oficial/21 - Guirnalda LED Balones de Futbol/21 - Guirnalda LED Balones de Futbol - 01.jpg"
   },
   {
     "id": "22",
@@ -327,7 +327,7 @@ const PRODUCTS = [
     "instructions": "1. Insertar pila AA. 2. Conectar receptor USB a la PC. 3. Descargar Logitech G HUB (opcional).",
     "warnings": "Limpiar sensor óptico con aire comprimido o hisopo seco.",
     "fun_fact": "El sensor HERO consume 10 veces menos energía que sensores anteriores.",
-    "image": ""
+    "image": "assets/images/productos/oficial/22 - Mouse Gamer G305 (Genérico)/22 - Mouse Gamer G305 (Genérico) - 01.jpg"
   },
   {
     "id": "23",
@@ -342,7 +342,7 @@ const PRODUCTS = [
     "instructions": "1. Enganchar en mochila/cinturón. 2. Encender y vincular por Bluetooth. 3. Ajustar volumen.",
     "warnings": "No mojar en exceso si la tapa del puerto de carga está abierta.",
     "fun_fact": "El marco de mosquetón rodea todo el perímetro del parlante dándole rigidez.",
-    "image": ""
+    "image": "assets/images/productos/oficial/23 - Parlante Portátil (Clip 3 Estilo)/23 - Parlante Portátil (Clip 3 Estilo) - 01.jpg"
   },
   {
     "id": "24",
@@ -357,14 +357,14 @@ const PRODUCTS = [
     "instructions": "1. Esterilizar componentes. 2. Adherir copa al pecho. 3. Presionar la palanca rítmicamente.",
     "warnings": "Lavar y esterilizar en agua hirviendo después de cada uso.",
     "fun_fact": "El diseño de la copa imita la succión natural del bebé para estimular la leche.",
-    "image": ""
+    "image": "assets/images/productos/oficial/24 - Extractor de Leche Materna/24 - Extractor de Leche Materna - 01.jpg"
   },
   {
     "id": "25",
     "name": "Reflector Solar LED IP66",
     "price": 220.0,
     "min_price": 180.0,
-    "category": "Iluminación Exterior",
+    "category": "Hogar",
     "brand": "Private Street Lamp IP66",
     "color": "Naranja y Negro",
     "features": "Proyector de alta potencia para exteriores IP66 con panel solar independiente.",
@@ -372,7 +372,7 @@ const PRODUCTS = [
     "instructions": "1. Montar reflector y panel en pared. 2. Conectar cable entre panel y reflector. 3. Configurar con control remoto.",
     "warnings": "No cubrir el panel con ramas ni techos.",
     "fun_fact": "Incluye sensor de movimiento y temporizador mediante control remoto.",
-    "image": ""
+    "image": "assets/images/productos/oficial/25 - Reflector Solar LED IP66/25 - Reflector Solar LED IP66 - 01.jpg"
   },
   {
     "id": "26",
@@ -387,7 +387,7 @@ const PRODUCTS = [
     "instructions": "1. Colocar pilas en el reverso. 2. Colgar en la pared. 3. Activar el interruptor lateral.",
     "warnings": "No lavar con agua ni doblar bruscamente para no romper los cables internos.",
     "fun_fact": "Los LED están colocados estratégicamente en las luces de los árboles y estrellas.",
-    "image": ""
+    "image": "assets/images/productos/oficial/26 - Lienzo - Tapiz Navideño LED/26 - Lienzo - Tapiz Navideño LED - 01.jpg"
   },
   {
     "id": "27",
@@ -402,7 +402,7 @@ const PRODUCTS = [
     "instructions": "1. Abrir tapa e insertar pilas. 2. Conectar nanoreceptor USB a la PC. 3. Usar directamente.",
     "warnings": "Apagar el switch inferior al guardar en la mochila para ahorrar pila.",
     "fun_fact": "Guardado interno: el receptor USB se almacena dentro del compartimento de pilas.",
-    "image": ""
+    "image": "assets/images/productos/oficial/27 - Mouse Inalámbrico Ergonómico/27 - Mouse Inalámbrico Ergonómico - 01.jpg"
   },
   {
     "id": "28",
@@ -417,7 +417,7 @@ const PRODUCTS = [
     "instructions": "1. Presionar botón inferior. 2. Ubicar en exterior soleado.",
     "warnings": "Limpiar la superficie del panel para evitar acumulación de tierra.",
     "fun_fact": "Diseñada en resina sintética que imita piedra real para resistir la intemperie.",
-    "image": ""
+    "image": "assets/images/productos/oficial/28 - Lampara Solar Conmemorativa/28 - Lampara Solar Conmemorativa - 01.jpg"
   },
   {
     "id": "29",
@@ -432,7 +432,7 @@ const PRODUCTS = [
     "instructions": "1. Insertar pila AA. 2. Encender switch. 3. Introducir suavemente en fosas nasales u oídos.",
     "warnings": "No lavar el cuerpo entero bajo el grifo; desmontar solo el cabezal de corte.",
     "fun_fact": "Las cuchillas giran 360° internamente dentro de un escudo para proteger la piel.",
-    "image": ""
+    "image": "assets/images/productos/oficial/29 - Cortador de Vellos Nasales/29 - Cortador de Vellos Nasales - 01.jpg"
   },
   {
     "id": "30",
@@ -447,7 +447,7 @@ const PRODUCTS = [
     "instructions": "1. Conectar receptor USB a la PC. 2. Encender switch inferior. 3. Ajustar DPI con botón superior.",
     "warnings": "Evitar caídas que desalineen el sensor óptico inferior.",
     "fun_fact": "El botón DPI altera la velocidad del puntero al instante sin ir a configuración de la PC.",
-    "image": ""
+    "image": "assets/images/productos/oficial/30 - Mouse Gamer RGB (X9)/30 - Mouse Gamer RGB (X9) - 01.jpg"
   },
   {
     "id": "31",
@@ -462,7 +462,7 @@ const PRODUCTS = [
     "instructions": "1. Encender botón inferior. 2. Colocar peine guía si se desea. 3. Recortar al ras.",
     "warnings": "Aceitar las cuchillas regularmente y limpiar pelusa con el cepillo incluido.",
     "fun_fact": "Su cabezal en T permite hacer líneas perfectas en patillas y cuello como de barbería.",
-    "image": ""
+    "image": "assets/images/productos/oficial/31 - Cortadora de Barba T9 Vintage/31 - Cortadora de Barba T9 Vintage - 01.jpg"
   },
   {
     "id": "32",
@@ -477,7 +477,7 @@ const PRODUCTS = [
     "instructions": "1. Encender botón inferior. 2. Buscar \"M3\" en el Bluetooth del celular. 3. Reproducir.",
     "warnings": "Cargar con adaptadores estándar de 5V 1A.",
     "fun_fact": "Se pueden emparejar dos parlantes M3 al mismo celular para sonido estéreo TWS.",
-    "image": ""
+    "image": "assets/images/productos/oficial/32 - Mini Parlante M3 Metalizado/32 - Mini Parlante M3 Metalizado - 01.jpg"
   },
   {
     "id": "33",
@@ -492,7 +492,7 @@ const PRODUCTS = [
     "instructions": "1. Fijar timbre en puerta principal. 2. Enchufar timbre receptor dentro de casa. 3. Sincronizar app.",
     "warnings": "Proteger de lluvia directa prolongada si la entrada no tiene alero.",
     "fun_fact": "Permite distorsionar la voz en tiempo real para mayor seguridad en la llamada.",
-    "image": ""
+    "image": "assets/images/productos/oficial/33 - Timbre Inteligente con Cámara/33 - Timbre Inteligente con Cámara - 01.jpg"
   },
   {
     "id": "34",
@@ -507,7 +507,7 @@ const PRODUCTS = [
     "instructions": "1. Pegar base magnética en la pared. 2. Adherir la lámpara. 3. Cambiar a modo AUTO.",
     "warnings": "Solo funciona en ambientes oscuros para ahorrar energía.",
     "fun_fact": "Apagado automático a los 15-20 segundos de no detectar movimiento.",
-    "image": ""
+    "image": "assets/images/productos/oficial/34 - Luz Nocturna LED con Sensor/34 - Luz Nocturna LED con Sensor - 01.jpg"
   },
   {
     "id": "35",
@@ -522,7 +522,7 @@ const PRODUCTS = [
     "instructions": "1. Colocar agua en la base. 2. Poner biberón o chupón. 3. Girar perilla a temperatura deseada.",
     "warnings": "Nunca encender sin agua en el depósito inferior para no quemar la resistencia.",
     "fun_fact": "Mantiene el biberón tibio a 40°C automáticamente durante toda la noche.",
-    "image": ""
+    "image": "assets/images/productos/oficial/35 - Calentador y Esterilizador (Disney)/35 - Calentador y Esterilizador (Disney) - 01.jpg"
   },
   {
     "id": "36",
@@ -537,7 +537,7 @@ const PRODUCTS = [
     "instructions": "1. Seleccionar modo (BT/Radio/USB). 2. Sintonizar perilla analógica. 3. Extender antena telescópica.",
     "warnings": "Desconectar de la corriente una vez cargado si se usa en modo batería.",
     "fun_fact": "El nombre \"LT-IPHONE 6\" es una marca fantasía vintage comercializada por el fabricante.",
-    "image": ""
+    "image": "assets/images/productos/oficial/36 - Radio Reproductor Portátil/36 - Radio Reproductor Portátil - 01.jpg"
   },
   {
     "id": "37",
@@ -552,7 +552,7 @@ const PRODUCTS = [
     "instructions": "1. Conectar cable a la TV. 2. Pegar base magnética en ventana o metal. 3. Buscar canales.",
     "warnings": "Colocar lo más cerca posible de ventanas para mejor recepción de señal.",
     "fun_fact": "Su base imantada permite fijarla firmemente a protecciones metálicas de ventanas.",
-    "image": ""
+    "image": "assets/images/productos/oficial/37 - Antena Digital HDTV/37 - Antena Digital HDTV - 01.jpg"
   },
   {
     "id": "38",
@@ -567,7 +567,7 @@ const PRODUCTS = [
     "instructions": "1. Sacar los audífonos. 2. Vincular por Bluetooth. 3. Colocar en el oído.",
     "warnings": "Limpiar gomas de silicona frecuentemente por higiene.",
     "fun_fact": "Tienen estuche con ajuste imantado que atrae los earbuds a su posición de carga.",
-    "image": ""
+    "image": "assets/images/productos/oficial/38 - Audífonos TWS In-Ear (Pro Genérico)/38 - Audífonos TWS In-Ear (Pro Genérico) - 01.jpg"
   },
   {
     "id": "39",
@@ -582,7 +582,7 @@ const PRODUCTS = [
     "instructions": "1. Cargar por USB. 2. Presionar botón frontal para encender. 3. Ajustar velocidades.",
     "warnings": "No meter los dedos ni objetos en la rejilla mientras gira.",
     "fun_fact": "Incluye base desmontable para colocarlo como ventilador de escritorio.",
-    "image": ""
+    "image": "assets/images/productos/oficial/39 - Mini Ventilador de Bolsillo/39 - Mini Ventilador de Bolsillo - 01.jpg"
   },
   {
     "id": "40",
@@ -597,7 +597,7 @@ const PRODUCTS = [
     "instructions": "1. Conectar a la corriente. 2. Apuntar hacia pared o fachada. 3. Ajustar distancia para enfocar.",
     "warnings": "Evitar mirar fijamente la lente de proyección activa.",
     "fun_fact": "Cubre hasta 50 metros cuadrados si se aleja a una distancia de 5 metros.",
-    "image": ""
+    "image": "assets/images/productos/oficial/40 - Proyector de Luces LED - Varios/40 - Proyector de Luces LED - Varios - 01.jpg"
   },
   {
     "id": "41",
@@ -612,6 +612,6 @@ const PRODUCTS = [
     "instructions": "N/A",
     "warnings": "Vender sin garantía declarando fallas.",
     "fun_fact": "Recuperar monetario de mercadería dañada.",
-    "image": ""
+    "image": "assets/images/productos/oficial/41 - Buclera Enruladora Rizadora/41 - Buclera Enruladora Rizadora - 01.jpg"
   }
 ];

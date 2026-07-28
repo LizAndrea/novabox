@@ -49,23 +49,23 @@ function renderPhones() {
       const defaultImg = "https://via.placeholder.com/300x400?text=No+Image";
       const imgUrl = p.image ? p.image : defaultImg;
       return `
-      <div data-action="view" data-id="${p.id}" class="cursor-pointer flex flex-col w-full group bg-[#f5f5f7] rounded-3xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:bg-white transition-all duration-300">
+      <div data-action="view" data-id="${p.id}" class="cursor-pointer flex flex-col w-full group bg-white rounded-2xl md:rounded-3xl overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.03)] border border-gray-100 hover:bg-[#fafaf9] hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300">
         
         <!-- Image Container -->
-        <div class="w-full h-[260px] flex items-center justify-center p-6 relative">
-          <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-xl" alt="${p.name}" />
+        <div class="w-full h-[140px] md:h-[260px] flex items-center justify-center p-3 md:p-6 relative">
+          <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105" alt="${p.name}" />
         </div>
 
         <!-- Content Area (Inside Card) -->
-        <div class="flex flex-col items-start text-left w-full px-6 pb-6">
-          <h3 class="font-semibold text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
-          <p class="text-[1rem] text-gray-700 mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
+        <div class="flex flex-col items-start text-left w-full px-3 pb-3 md:px-6 md:pb-6">
+          <h3 class="font-semibold text-[0.95rem] md:text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
+          <p class="text-[0.75rem] md:text-[1rem] text-gray-700 mt-0.5 md:mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
           
           <!-- Color variants (Aesthetic Apple Style) -->
-          <div class="flex gap-2 mt-4">
-            <div class="w-5 h-5 rounded-full bg-black shadow-sm"></div>
-            <div class="w-5 h-5 rounded-full bg-gray-300 shadow-sm"></div>
-            <div class="w-5 h-5 rounded-full bg-[#f97316] ring-2 ring-offset-2 ring-[#f97316] shadow-sm"></div>
+          <div class="flex gap-1.5 md:gap-2 mt-2 md:mt-4">
+            <div class="w-3 h-3 md:w-5 md:h-5 rounded-full bg-black shadow-sm"></div>
+            <div class="w-3 h-3 md:w-5 md:h-5 rounded-full bg-gray-300 shadow-sm"></div>
+            <div class="w-3 h-3 md:w-5 md:h-5 rounded-full bg-[#f97316] ring-2 ring-offset-2 ring-[#f97316] shadow-sm"></div>
           </div>
         </div>
       </div>`;
@@ -73,7 +73,7 @@ function renderPhones() {
 
     html += `
     <div class="category-section relative group/cat">
-      <div class="flex items-center justify-center mb-10 relative textContainer MH-mg w-full text-center">
+      <div class="flex items-center justify-center mb-4 md:mb-10 relative textContainer MH-mg w-full text-center">
         <div class="textContent a0QQm yXpte w-full">
           <div class="desktopText csCim hidden md:block w-full">
             <h2 class="text-center w-full"><span>${cat}</span></h2>
@@ -85,7 +85,7 @@ function renderPhones() {
       </div>
       
       <div class="relative w-full">
-        <div id="${catId}" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 pb-8 pt-4 px-2 md:px-0">
+        <div id="${catId}" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-6 pb-4 md:pb-8 pt-2 md:pt-4 px-1 md:px-0">
           ${cardsHtml}
         </div>
       </div>
@@ -96,7 +96,7 @@ function renderPhones() {
 }
 
 function openDetail(id) {
-  const p = PRODUCTS.find(x => x.id === id);
+  const p = PRODUCTS.find(x => x.id == id);
   if (!p) return;
 
   const defaultImg = "https://via.placeholder.com/300x400?text=No+Image";
@@ -162,7 +162,7 @@ function closeDetail() {
 }
 
 function sendToWhatsApp(id) {
-  const p = PRODUCTS.find(x => x.id === id);
+  const p = PRODUCTS.find(x => x.id == id);
   if (!p) return;
   const phoneNumber = "77777777";
   const message = `Hola NovaBox! Quiero hacer un pedido de: ${p.name} por ${p.price}Bs.`;
@@ -200,15 +200,88 @@ if (btnScrollRight && brandChipsContainer) {
   });
 }
 
-// Brand chips
-document.querySelectorAll('.brand-chip').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.brand-chip').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    activeBrand = btn.dataset.brand;
-    renderPhones();
+// Load dynamic categories
+async function loadCategories() {
+  try {
+    const response = await fetch('js/categories.json');
+    if (response.ok) {
+      const categories = await response.json();
+      const container = document.getElementById('brandChips');
+      const footerContainer = document.getElementById('footerCategories');
+      
+      if (container) {
+        categories.forEach(cat => {
+          // Top Brand Chips
+          const btn = document.createElement('button');
+          btn.className = 'brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]';
+          btn.dataset.brand = cat.name;
+          btn.dataset.catId = cat.id;
+          btn.innerHTML = `
+            <div class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                <img src="assets/images/pagina/categorias/${cat.iconImage || (cat.id + '.png')}" class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md" alt="${cat.name}" />
+            </div>
+            <span class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">${cat.name}</span>
+          `;
+          container.appendChild(btn);
+                 // Footer Banners
+          if (footerContainer) {
+            const footerBtn = document.createElement('div');
+            footerBtn.className = 'snap-center flex-shrink-0 w-[85%] md:w-full h-full cursor-pointer relative group rounded-3xl md:rounded-none overflow-hidden shadow-2xl md:shadow-none';
+            footerBtn.innerHTML = `
+              <img src="assets/images/pagina/categorias/${cat.id}.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="${cat.name}" />
+              <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
+              <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
+                <h3 class="text-white font-extrabold text-4xl md:text-6xl drop-shadow-2xl tracking-widest uppercase scale-95 group-hover:scale-100 transition-transform duration-500">${cat.name}</h3>
+                ${cat.detail ? `<p class="mt-3 text-white/90 text-sm md:text-lg font-medium drop-shadow-md tracking-wide max-w-2xl">${cat.detail}</p>` : ''}
+              </div>
+            `;
+            footerBtn.addEventListener('click', () => {
+              // Same functionality as BRANDS section
+              document.querySelectorAll('.brand-chip').forEach(b => b.classList.remove('active'));
+              const topChip = document.querySelector(`.brand-chip[data-brand="${cat.name}"]`);
+              if (topChip) {
+                topChip.classList.add('active');
+                topChip.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+              }
+              activeBrand = cat.name;
+              renderPhones();
+              document.getElementById('listings').scrollIntoView({ behavior: 'smooth' });
+            });
+            footerContainer.appendChild(footerBtn);
+          }
+        });
+      }
+    }
+  } catch (err) {
+    console.error('Error loading categories:', err);
+  }
+
+  // Attach click events to top chips
+  document.querySelectorAll('.brand-chip').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.brand-chip').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeBrand = btn.dataset.brand;
+      renderPhones();
+    });
   });
-});
+}
+
+// Footer Carousel Scroll Controls
+const footerScrollLeft = document.getElementById('footerScrollLeft');
+const footerScrollRight = document.getElementById('footerScrollRight');
+const footerContainer = document.getElementById('footerCategories');
+
+if (footerScrollLeft && footerScrollRight && footerContainer) {
+  footerScrollLeft.addEventListener('click', () => {
+    footerContainer.scrollBy({ left: -footerContainer.clientWidth, behavior: 'smooth' });
+  });
+  footerScrollRight.addEventListener('click', () => {
+    footerContainer.scrollBy({ left: footerContainer.clientWidth, behavior: 'smooth' });
+  });
+}
+
+loadCategories();
 
 // Listen for Search Input
 const searchInput = document.getElementById('searchInput');

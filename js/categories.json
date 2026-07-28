@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Audio",
+    "detail": "Siente Cada Ritmo. Tu Música sin Límites.",
+    "color": "#3b82f6",
+    "iconImage": "1s.png"
+  },
+  {
+    "id": "2",
+    "name": "Cuidado Personal",
+    "detail": "Tu Rutina Diaria de Bienestar y Estilo",
+    "color": "#ec4899",
+    "iconImage": "2s.png"
+  },
+  {
+    "id": "3",
+    "name": "Decoración / Regalos",
+    "detail": "Detalles Únicos para Espacios Especiales",
+    "color": "#f59e0b",
+    "iconImage": "3.png"
+  },
+  {
+    "id": "4",
+    "name": "Hogar",
+    "detail": "Haz de Tu Casa el Lugar Más Cómodo.",
+    "color": "#10b981",
+    "iconImage": "4s.png"
+  },
+  {
+    "id": "5",
+    "name": "Seguridad / Domótica",
+    "detail": "Tu Casa Protegida, Estés Donde Estés.",
+    "color": "#6366f1",
+    "iconImage": "5s.png"
+  },
+  {
+    "id": "6",
+    "name": "Tecnología",
+    "detail": "Gadgets Innovadores para Tu Estilo de Vida",
+    "color": "#8b5cf6",
+    "iconImage": "6s.png"
+  }
+]
