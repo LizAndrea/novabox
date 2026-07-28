@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descubre en NovaBox el mejor catálogo de electrónica y tecnología. Encuentra gadgets, accesorios y más con envíos a todo el país." />
     <title>NovaBox — Electrónica y Tecnología</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,9 +33,9 @@
 
     <!-- HERO -->
     <section class="hero-gradient text-white relative overflow-hidden h-[40vh] min-h-[320px] flex items-center">
-        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
-            <source src="assets/images/pagina/portada00.jpeg" type="image/jpeg" />
-        </video>
+        <!-- Fondo imagen solo para vista web (desktop) -->
+        <img src="assets/images/pagina/portada00.jpeg" class="absolute inset-0 w-full h-full object-cover hidden md:block" alt="Fondo" />
+        <div class="absolute inset-0 bg-black/40 hidden md:block"></div> <!-- Overlay oscuro para que resalte el texto -->
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex w-full z-10">
             <div class="slide-up max-w-4xl">
                 <span
@@ -115,16 +116,16 @@
                 id="brandChips">
 
                 <button
-                    class="brand-chip active flex flex-col items-center gap-2 md:gap-3 group snap-start flex-shrink-0 min-w-[70px] md:min-w-[100px]"
+                    class="brand-chip active flex flex-col items-center gap-1 md:gap-3 group snap-start flex-shrink-0 w-[85px] md:w-[120px]"
                     data-brand="all">
                     <div
                         class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
-                        <img src="assets/images/pagina/cat00.webp"
+                        <img src="assets/images/pagina/categorias/0.png"
                             class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
                             alt="Todo" />
                     </div>
                     <span
-                        class="text-sm md:text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap">Todo</span>
+                        class="text-[0.7rem] md:text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-normal leading-tight text-center break-words w-full">Todo</span>
                 </button>
                 <!-- Dynamic categories will be inserted here by script.js -->
             </div>
@@ -141,8 +142,23 @@
     <!-- LISTINGS -->
     <section id="listings" class="max-w-[90rem] mx-auto px-1.5 sm:px-4 md:px-6 pb-16">
         <div id="listingsContainer" class="flex flex-col gap-6 md:gap-16 mt-4 md:mt-8"></div>
-        <div id="noResults" class="hidden text-center py-16 text-gray-500 font-medium text-lg">
-            No se encontraron productos
+        <div id="noResults" class="hidden py-16">
+            <div class="flex flex-col items-center justify-center px-4 text-center">
+                <svg class="w-20 h-20 text-gray-300 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">No encontramos resultados</h3>
+                <p class="text-gray-500 mb-8 max-w-md mx-auto">No pudimos encontrar productos que coincidan con tu búsqueda. Puedes ver todos los productos o consultarnos directamente.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center w-full max-w-2xl mx-auto">
+                    <button onclick="document.getElementById('searchInput').value = ''; document.getElementById('searchInput').dispatchEvent(new Event('input')); document.querySelector('.brand-chip[data-brand=\'all\']').click();" class="flex-1 bg-black text-white px-6 py-3 rounded-xl font-bold hover:bg-gray-800 transition-colors shadow-lg shadow-black/10">
+                        Ver todos los productos
+                    </button>
+                    <a href="https://wa.me/61198607?text=Hola%20NovaBox!%20%F0%9F%91%8B%0A%0AEstoy%20buscando%20un%20producto%20espec%C3%ADfico." target="_blank" class="flex-1 bg-[#25D366] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1ebd5a] transition-colors shadow-lg shadow-green-500/20 flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.98 1.005-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.886-9.885 9.886m8.411-18.297A11.815 11.815 0 0012.052 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                        Consultar por WhatsApp si buscas algo específico
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 

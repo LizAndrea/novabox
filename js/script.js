@@ -49,31 +49,31 @@ function renderPhones() {
     <div data-action="view" data-id="${p.id}" class="cursor-pointer flex flex-col w-full group bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-[0_4px_15px_rgba(0,0,0,0.03)] border border-gray-100 hover:bg-[#fafaf9] hover:shadow-[0_12px_35px_rgba(0,0,0,0.1)] hover:-translate-y-1.5 transition-all duration-300">
       
       <!-- Image Container -->
-      <div class="w-full h-[140px] md:h-[260px] flex items-center justify-center p-3 md:p-6 relative">
-        <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105" alt="${p.name}" />
+      <div class="w-full h-[120px] md:h-[260px] flex items-center justify-center p-2 md:p-6 relative">
+        <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105" alt="${p.name} - ${catName} - ${p.brand || 'Marca'}" />
       </div>
 
       <!-- Content Area (Inside Card) -->
-      <div class="flex flex-col items-start text-left w-full h-full px-3 pb-3 md:px-6 md:pb-6 flex-1">
-        <h3 class="font-semibold text-[0.95rem] md:text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
-        <p class="text-[0.75rem] md:text-[1rem] text-gray-700 mt-0.5 md:mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
+      <div class="flex flex-col items-start text-left w-full h-full px-2 pb-2 md:px-6 md:pb-6 flex-1">
+        <h3 class="font-semibold text-sm md:text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
+        <p class="text-[0.65rem] md:text-[1rem] text-gray-700 mt-0.5 md:mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
         
         <!-- Category Badge -->
-        <div class="mt-2" style="color: ${catColor};">
-          <span class="inline-block px-2 py-0.5 text-[0.65rem] md:text-xs font-bold uppercase tracking-wider rounded-full border border-current" style="background-color: ${catColor}1A;">
+        <div class="mt-1 md:mt-2" style="color: ${catColor};">
+          <span class="inline-block px-1.5 md:px-2 py-0.5 text-[0.55rem] md:text-xs font-bold uppercase tracking-wider rounded-full border border-current" style="background-color: ${catColor}1A;">
             ${catName}
           </span>
         </div>
         
         <!-- Bottom Row: Color variants & Pedir Button -->
-        <div class="flex items-center justify-between w-full mt-auto pt-4 md:pt-6">
-          <div class="flex gap-1.5 md:gap-2">
-            <div class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-black shadow-sm"></div>
-            <div class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-gray-300 shadow-sm"></div>
-            <div class="w-3 h-3 md:w-4 md:h-4 rounded-full bg-[#f97316] ring-2 ring-offset-2 ring-[#f97316] shadow-sm"></div>
+        <div class="flex items-center justify-between w-full mt-auto pt-2 md:pt-6">
+          <div class="flex gap-1 md:gap-2">
+            <div class="w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-black shadow-sm"></div>
+            <div class="w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-gray-300 shadow-sm"></div>
+            <div class="w-2.5 h-2.5 md:w-4 md:h-4 rounded-full bg-[#f97316] ring-2 ring-offset-2 ring-[#f97316] shadow-sm"></div>
           </div>
           
-          <button class="text-[0.75rem] md:text-sm font-bold text-white bg-slate-900 hover:bg-sage-olive px-3 py-1.5 md:px-4 md:py-2 rounded-full transition-colors flex items-center gap-1 group/btn shadow-md">
+          <button class="text-[0.65rem] md:text-sm font-bold text-white bg-slate-900 hover:bg-sage-olive px-2 py-1 md:px-4 md:py-2 rounded-full transition-colors flex items-center gap-1 group/btn shadow-md">
             Pedir 
             <span class="group-hover/btn:translate-x-1 transition-transform">→</span>
           </button>
@@ -96,7 +96,7 @@ function renderPhones() {
     </div>
     
     <div class="relative w-full">
-      <div id="grid-all" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-6 pb-4 md:pb-8 pt-2 md:pt-4 px-0 md:px-0">
+      <div id="grid-all" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-1.5 sm:gap-4 md:gap-6 pb-4 md:pb-8 pt-2 md:pt-4 px-0 md:px-0">
         ${cardsHtml}
       </div>
     </div>
@@ -116,7 +116,7 @@ function openDetail(id) {
     <div class="flex flex-col md:flex-row h-full">
       <!-- Left side: Image -->
       <div class="md:w-1/2 relative bg-white p-4 md:p-8 flex items-center justify-center min-h-[220px] md:min-h-[300px]">
-        <img src="${imgUrl}" class="max-h-64 md:max-h-96 w-auto object-contain rounded-xl shadow-xl md:shadow-2xl transition-transform hover:scale-105 duration-500" alt="${p.name}" />
+        <img src="${imgUrl}" class="max-h-64 md:max-h-96 w-auto object-contain rounded-xl shadow-xl md:shadow-2xl transition-transform hover:scale-105 duration-500" alt="${p.name} - ${p.category || 'Categoría'} - ${p.brand || 'Marca'}" />
         <div class="absolute top-4 left-4 md:top-6 md:left-6 z-10 drop-shadow-md">
           ${conditionBadge(p.category || 'Producto')}
         </div>
@@ -178,6 +178,13 @@ function openDetail(id) {
   document.getElementById('detailModal').classList.remove('hidden');
   document.getElementById('detailModal').classList.add('flex');
   history.pushState({ modal: 'detail', id: id }, '', `#producto-${id}`);
+
+  document.title = `${p.name} | NovaBox`;
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    let cleanFeatures = p.features ? p.features.replace(/<[^>]*>?/gm, '') : '';
+    metaDesc.content = `Compra ${p.name} de ${p.brand || 'la mejor marca'} en NovaBox. ${cleanFeatures.substring(0, 100)}...`;
+  }
 }
 
 function closeDetail() {
@@ -185,6 +192,12 @@ function closeDetail() {
   document.getElementById('detailModal').classList.remove('flex');
   if (window.location.hash.startsWith('#producto-')) {
     history.replaceState(null, '', window.location.pathname);
+  }
+
+  document.title = 'NovaBox — Electrónica y Tecnología';
+  let metaDesc = document.querySelector('meta[name="description"]');
+  if (metaDesc) {
+    metaDesc.content = 'Descubre en NovaBox el mejor catálogo de electrónica y tecnología. Encuentra gadgets, accesorios y más con envíos a todo el país.';
   }
 }
 
@@ -249,14 +262,14 @@ async function loadCategories() {
         categories.forEach(cat => {
           // Top Brand Chips
           const btn = document.createElement('button');
-          btn.className = 'brand-chip flex flex-col items-center gap-2 md:gap-3 group snap-start flex-shrink-0 min-w-[70px] md:min-w-[100px]';
+          btn.className = 'brand-chip flex flex-col items-center gap-1 md:gap-3 group snap-start flex-shrink-0 w-[85px] md:w-[120px]';
           btn.dataset.brand = cat.name;
           btn.dataset.catId = cat.id;
           btn.innerHTML = `
             <div class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
-                <img src="assets/images/pagina/categorias/${cat.iconImage || (cat.id + '.png')}" class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md" alt="${cat.name}" />
+                <img src="assets/images/pagina/categorias/${cat.iconImage || (cat.id + '.jpg')}" class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md" alt="${cat.name}" />
             </div>
-            <span class="text-sm md:text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">${cat.name}</span>
+            <span class="text-[0.7rem] md:text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-normal leading-tight text-center break-words w-full">${cat.name}</span>
           `;
           container.appendChild(btn);
           // Footer Banners
@@ -264,7 +277,7 @@ async function loadCategories() {
             const footerBtn = document.createElement('div');
             footerBtn.className = 'snap-center flex-shrink-0 w-[85%] md:w-full h-full cursor-pointer relative group rounded-3xl md:rounded-none overflow-hidden shadow-2xl md:shadow-none';
             footerBtn.innerHTML = `
-              <img src="assets/images/pagina/categorias/${cat.id}.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="${cat.name}" />
+              <img src="assets/images/pagina/categorias/${cat.id}.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" alt="${cat.name}" />
               <div class="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500"></div>
               <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center">
                 <h3 class="text-white font-extrabold text-4xl md:text-6xl drop-shadow-2xl tracking-widest uppercase scale-95 group-hover:scale-100 transition-transform duration-500">${cat.name}</h3>
