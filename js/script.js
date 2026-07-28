@@ -49,20 +49,20 @@ function renderPhones() {
       const defaultImg = "https://via.placeholder.com/300x400?text=No+Image";
       const imgUrl = p.image ? p.image : defaultImg;
       return `
-      <div data-action="view" data-id="${p.id}" class="snap-start flex-shrink-0 cursor-pointer flex flex-col w-[350px] group bg-[#f5f5f7] rounded-[32px] overflow-hidden hover:shadow-[0_8px_30px_rgba(0,0,0,0.12)] transition-shadow duration-300">
+      <div data-action="view" data-id="${p.id}" class="cursor-pointer flex flex-col w-full group bg-[#f5f5f7] rounded-3xl overflow-hidden shadow-[0_8px_30px_rgba(0,0,0,0.08)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.15)] hover:-translate-y-2 hover:bg-white transition-all duration-300">
         
         <!-- Image Container -->
-        <div class="w-full h-[320px] flex items-center justify-center p-8 relative">
+        <div class="w-full h-[260px] flex items-center justify-center p-6 relative">
           <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105 drop-shadow-xl" alt="${p.name}" />
         </div>
 
         <!-- Content Area (Inside Card) -->
-        <div class="flex flex-col items-start text-left w-full px-8 pb-8">
-          <h3 class="font-extrabold text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
+        <div class="flex flex-col items-start text-left w-full px-6 pb-6">
+          <h3 class="font-semibold text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
           <p class="text-[1rem] text-gray-700 mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
           
           <!-- Color variants (Aesthetic Apple Style) -->
-          <div class="flex gap-2 mt-5">
+          <div class="flex gap-2 mt-4">
             <div class="w-5 h-5 rounded-full bg-black shadow-sm"></div>
             <div class="w-5 h-5 rounded-full bg-gray-300 shadow-sm"></div>
             <div class="w-5 h-5 rounded-full bg-[#f97316] ring-2 ring-offset-2 ring-[#f97316] shadow-sm"></div>
@@ -85,18 +85,9 @@ function renderPhones() {
       </div>
       
       <div class="relative w-full">
-        <!-- Scroll Buttons -->
-        <button onclick="document.getElementById('${catId}').scrollBy({left: -350, behavior: 'smooth'})" class="absolute left-[-20px] top-1/2 -translate-y-1/2 bg-white/95 p-3 rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-10 opacity-0 group-hover/cat:opacity-100 transition-all hover:scale-110 border border-gray-100 text-black">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
-        </button>
-        
-        <div id="${catId}" class="flex justify-start gap-6 overflow-x-auto scroll-hide pb-8 pt-4 snap-x px-2">
+        <div id="${catId}" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-6 pb-8 pt-4 px-2 md:px-0">
           ${cardsHtml}
         </div>
-        
-        <button onclick="document.getElementById('${catId}').scrollBy({left: 350, behavior: 'smooth'})" class="absolute right-[-20px] top-1/2 -translate-y-1/2 bg-white/95 p-3 rounded-full shadow-[0_4px_12px_rgba(0,0,0,0.1)] z-10 opacity-0 group-hover/cat:opacity-100 transition-all hover:scale-110 border border-gray-100 text-black">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
-        </button>
       </div>
     </div>`;
   });
@@ -219,7 +210,23 @@ document.querySelectorAll('.brand-chip').forEach(btn => {
   });
 });
 
-// Filters removed
+// Listen for Search Input
+const searchInput = document.getElementById('searchInput');
+if (searchInput) {
+  searchInput.addEventListener('input', (e) => {
+    searchQuery = e.target.value;
+    
+    // Optionally reset brand to 'all' when searching globally
+    if(searchQuery.trim() !== '') {
+      activeBrand = 'all';
+      document.querySelectorAll('.brand-chip').forEach(b => b.classList.remove('active'));
+      const allBtn = document.querySelector('.brand-chip[data-brand="all"]');
+      if(allBtn) allBtn.classList.add('active');
+    }
+    
+    renderPhones();
+  });
+}
 
 // Hero search enter key
 const heroSearch = document.getElementById('heroSearch');
