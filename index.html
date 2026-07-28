@@ -89,15 +89,17 @@
 
 
     <!-- BRANDS -->
-    <section id="brands" class="bg-white py-14 text-center">
+    <section id="brands" class="bg-white py-6 md:py-14 text-center">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 relative group/slider">
-            <div class="flex items-center justify-center mb-10 relative textContainer MH-mg w-full text-center">
+            <div class="flex items-center justify-center mb-4 md:mb-10 relative textContainer MH-mg w-full text-center">
                 <div class="textContent a0QQm yXpte w-full">
                     <div class="desktopText csCim hidden md:block">
-                        <h2 class="text-center w-full"><span>Elige tu categoría</span></h2>
+                        <h2 class="text-center w-full text-5xl font-bold text-gray-800 tracking-tight">Elige tu
+                            categoría</h2>
                     </div>
                     <div class="mobileText TPiEz md:hidden w-full">
-                        <h2 class="text-center w-full"><span>Elige tu categoría</span></h2>
+                        <h2 class="text-center w-full text-xl font-bold text-gray-800 tracking-tight">Elige tu categoría
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -109,20 +111,20 @@
                 </svg>
             </button>
 
-            <div class="flex flex-nowrap justify-start gap-8 md:gap-12 overflow-x-auto scroll-hide pb-6 pt-2 snap-x px-4"
+            <div class="flex flex-nowrap justify-start gap-4 md:gap-12 overflow-x-auto scroll-hide pb-3 md:pb-6 pt-2 snap-x px-2 md:px-4"
                 id="brandChips">
 
                 <button
-                    class="brand-chip active flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    class="brand-chip active flex flex-col items-center gap-2 md:gap-3 group snap-start flex-shrink-0 min-w-[70px] md:min-w-[100px]"
                     data-brand="all">
                     <div
-                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        class="w-14 h-14 md:w-20 md:h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
                         <img src="assets/images/pagina/cat00.webp"
                             class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
                             alt="Todo" />
                     </div>
                     <span
-                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap">Todo</span>
+                        class="text-sm md:text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap">Todo</span>
                 </button>
                 <!-- Dynamic categories will be inserted here by script.js -->
             </div>
@@ -137,8 +139,8 @@
     </section>
 
     <!-- LISTINGS -->
-    <section id="listings" class="max-w-[90rem] mx-auto px-4 sm:px-6 pb-16">
-        <div id="listingsContainer" class="flex flex-col gap-8 md:gap-16 mt-4 md:mt-8"></div>
+    <section id="listings" class="max-w-[90rem] mx-auto px-1.5 sm:px-4 md:px-6 pb-16">
+        <div id="listingsContainer" class="flex flex-col gap-6 md:gap-16 mt-4 md:mt-8"></div>
         <div id="noResults" class="hidden text-center py-16 text-gray-500 font-medium text-lg">
             No se encontraron productos
         </div>
