@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaBox — Electrónica y Tecnología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="js/tailwind.config.js"></script>
+</head>
+
+<body class="bg-[#f5f5f7] text-gray-900" style="font-family: 'Inter', sans-serif;">
+
+    <!-- NAV -->
+    <nav class="sticky top-0 z-40 bg-white/90 backdrop-blur-lg border-b border-ice-grey">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-2">
+                <img src="assets/images/pagina/logo.png" alt="Logo NovaBox"
+                    class="h-10 w-auto rounded-md object-contain" />
+                <span
+                    class="text-xl font-bold tracking-tight bg-gradient-to-r from-sage-olive to-soft-terracotta bg-clip-text text-transparent">NOVA
+                    BOX</span>
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-mauve-brown">
+                <a href="#listings" class="hover:text-sage-olive transition">PRODUCTOS</a>
+                <a href="#brands" class="hover:text-sage-olive transition">CATEGORIAS</a>
+                <a href="#how" class="hover:text-sage-olive transition">PASOS PARA COMPRAR</a>
+                <a href="#sell" class="hover:text-sage-olive transition">PEDIDOS</a>
+
+            </div>
+            <div class="flex items-center gap-3">
+
+
+
+            </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-gradient text-white relative overflow-hidden h-[55vh] min-h-[450px] flex items-center">
+        <video autoplay loop muted playsinline class="absolute inset-0 w-full h-full object-cover">
+            <source src="assets/images/pagina/portada00.jpeg" type="image/jpeg" />
+        </video>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-20 flex w-full z-10">
+            <div class="slide-up max-w-4xl">
+                <span
+                    class="inline-flex items-center gap-2 glass px-3 py-1 rounded-full text-xs font-bold mb-5 tracking-widest uppercase drop-shadow-md">
+                    <span class="w-2 h-2 rounded-full bg-sage-olive pulse-dot"></span>
+                    Envíos e entregas inmediatas a todo el Pais
+                </span>
+                <h1
+                    class="hero-title text-5xl md:text-[4rem] lg:text-[5rem] leading-[1] text-white drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] mb-6">
+                    Gadgets que simplifican tu Día a Día
+                </h1>
+                <p class="mt-5 text-lg text-white max-w-xl drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] font-medium">
+
+                    Encuentra lo último en tendencias cámaras solares, iluminación inteligente, audio y accesorios al
+                    mejor precio local.
+                </p>
+
+                <div class="mt-10 flex">
+                    <button onclick="document.getElementById('listings').scrollIntoView({ behavior: 'smooth' })"
+                        class="bg-[#25D366] hover:bg-[#128C7E] text-white px-8 py-4 rounded-2xl font-bold text-lg md:text-xl shadow-[0_4px_12px_rgba(37,211,102,0.4)] hover:shadow-[0_6px_16px_rgba(37,211,102,0.6)] transition-all transform hover:scale-105 flex items-center gap-3">
+                        📱 Ver Catálogo Completo y Pedir por WhatsApp
+                    </button>
+                </div>
+                <div
+                    class="mt-8 flex flex-wrap gap-6 text-sm font-bold tracking-wide drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
+                    <div class="flex items-center gap-2"><svg class="w-5 h-5 text-sandy-yellow" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg> 100% Garantizado</div>
+                    <div class="flex items-center gap-2"><svg class="w-5 h-5 text-sandy-yellow" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg> Envíos a todo el país</div>
+                    <div class="flex items-center gap-2"><svg class="w-5 h-5 text-sandy-yellow" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg> Precios accesibles</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- BRANDS -->
+    <section id="brands" class="bg-white py-14 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 relative group/slider">
+            <div class="flex items-center justify-center mb-10 relative textContainer MH-mg w-full text-center">
+                <div class="textContent a0QQm yXpte w-full">
+                    <div class="desktopText csCim hidden md:block w-full">
+                        <h2 class="text-center w-full"><span>Elige tu categoría</span></h2>
+                    </div>
+                    <div class="mobileText TPiEz md:hidden w-full">
+                        <h2 class="text-center w-full"><span>Elige tu categoría</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <button id="scrollLeft"
+                class="absolute left-0 top-1/2 translate-y-4 bg-white/90 p-3 rounded-full shadow-md z-10 opacity-0 group-hover/slider:opacity-100 transition hover:scale-110 border border-gray-100 text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <div class="flex flex-nowrap justify-start gap-8 md:gap-12 overflow-x-auto scroll-hide pb-6 pt-2 snap-x px-4"
+                id="brandChips">
+
+                <button
+                    class="brand-chip active flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="all">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Todo" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap">Todo</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Decoración / Regalos">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Decoración" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Decoración
+                        / Regalos</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Seguridad / Domótica">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat01.avif"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Seguridad" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Seguridad
+                        / Domótica</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Hogar">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Hogar" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Hogar</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Audio">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat02.avif"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Audio" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Audio</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Tecnología">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Tecnología" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Tecnología</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Cuidado Personal">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Cuidado Personal" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Cuidado
+                        Personal</span>
+                </button>
+                <button class="brand-chip flex flex-col items-center gap-3 group snap-start flex-shrink-0 min-w-[100px]"
+                    data-brand="Iluminación Exterior">
+                    <div
+                        class="w-20 h-20 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 group-[.active]:scale-110">
+                        <img src="assets/images/pagina/cat00.webp"
+                            class="max-w-full max-h-full object-contain filter drop-shadow-sm group-[.active]:drop-shadow-md"
+                            alt="Iluminación Exterior" />
+                    </div>
+                    <span
+                        class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">Iluminación
+                        Exterior</span>
+                </button>
+            </div>
+
+            <button id="scrollRight"
+                class="absolute right-0 top-1/2 translate-y-4 bg-white/90 p-3 rounded-full shadow-md z-10 opacity-0 group-hover/slider:opacity-100 transition hover:scale-110 border border-gray-100 text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- LISTINGS -->
+    <section id="listings" class="max-w-[90rem] mx-auto px-4 sm:px-6 pb-16">
+        <div id="listingsContainer" class="flex flex-col gap-16 mt-8"></div>
+        <div id="noResults" class="hidden text-center py-16 text-gray-500 font-medium text-lg">
+            No se encontraron productos
+        </div>
+    </section>
+
+    <!-- PROOF BAR -->
+    <section id="how" class="relative overflow-hidden border-t border-gray-200 bg-cover bg-center bg-no-repeat bg-fixed"
+        style="background-image: url('assets/images/pagina/portada00.jpeg');">
+        <!-- Overlay oscuro elegante -->
+        <div class="absolute inset-0 bg-black/60"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-24 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight drop-shadow-md">Nuestra Promesa
+                </h2>
+                <p class="mt-4 text-lg text-white/90 font-medium drop-shadow-sm">Te brindamos la mejor experiencia de
+                    compra, de principio a fin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Item 1 -->
+                <div
+                    class="bg-white/90 backdrop-blur-md rounded-3xl p-8 flex flex-col items-center text-center shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-white/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-white">
+                    <div class="text-4xl mb-4 drop-shadow-sm">📍</div>
+                    <h4 class="font-bold text-[1.15rem] text-black leading-snug tracking-tight">Entregas Presenciales
+                    </h4>
+                    <p class="text-[0.9rem] font-medium text-gray-700 mt-2 tracking-wide">(Prado / Colón / Cine Center)
+                    </p>
+                </div>
+                <!-- Item 2 -->
+                <div
+                    class="bg-white/90 backdrop-blur-md rounded-3xl p-8 flex flex-col items-center text-center shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-white/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-white">
+                    <div class="text-4xl mb-4 drop-shadow-sm">⚡</div>
+                    <h4 class="font-bold text-[1.15rem] text-black leading-snug tracking-tight">Pagos por QR</h4>
+                    <p class="text-[0.9rem] font-medium text-gray-700 mt-2 tracking-wide">o Efectivo Contra Entrega</p>
+                </div>
+                <!-- Item 3 -->
+                <div
+                    class="bg-white/90 backdrop-blur-md rounded-3xl p-8 flex flex-col items-center text-center shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-white/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-white">
+                    <div class="text-4xl mb-4 drop-shadow-sm">🛡️</div>
+                    <h4 class="font-bold text-[1.15rem] text-black leading-snug tracking-tight">Productos Probados</h4>
+                    <p class="text-[0.9rem] font-medium text-gray-700 mt-2 tracking-wide">y Garantizados</p>
+                </div>
+                <!-- Item 4 -->
+                <div
+                    class="bg-white/90 backdrop-blur-md rounded-3xl p-8 flex flex-col items-center text-center shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-white/50 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 hover:bg-white">
+                    <div class="text-4xl mb-4 drop-shadow-sm">💬</div>
+                    <h4 class="font-bold text-[1.15rem] text-black leading-snug tracking-tight">Atención Inmediata</h4>
+                    <p class="text-[0.9rem] font-medium text-gray-700 mt-2 tracking-wide">por WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SELL CTA -->
+    <section id="sell" class="max-w-7xl mx-auto px-4 sm:px-6 py-20">
+        <div
+            class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-sage-olive via-dark-olive to-deep-coffee text-white min-h-[400px] flex items-center">
+            <div class="absolute -top-20 -left-20 w-80 h-80 bg-white opacity-10 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10 w-full md:w-1/2 p-10 md:p-16">
+                <h2 class="text-3xl md:text-5xl font-extrabold leading-tight">¿Listo para llevarte tus productos?
+                </h2>
+                <p class="mt-4 text-lg text-white/90 font-medium">Haz tu pedido rápidamente. Escanea el código a la
+                    derecha o contáctanos por WhatsApp para adquirir tus artículos hoy mismo.</p>
+                <button id="btnContactWhatsApp"
+                    class="mt-8 bg-white text-dark-olive font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition shadow-xl">Contactar
+                    por WhatsApp</button>
+            </div>
+
+            <div class="absolute top-0 right-0 w-1/2 h-full flex justify-end p-6 md:p-0">
+                <img src="assets/images/pagina/qr.png" class="w-full h-full object-contain object-right"
+                    alt="QR Code" />
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a0a0a] text-gray-400 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-16 grid md:grid-cols-4 gap-12">
+            <div>
+                <div class="flex items-center gap-3 mb-6">
+                    <div>
+                        <img src="assets/images/pagina/Logo-Horizontal.png" alt="Logo NovaBox"
+                            class="h-10 w-auto rounded-md object-contain filter drop-shadow-md" />
+                    </div>
+
+                </div>
+                <p class="text-sm text-gray-400 leading-relaxed pr-4">
+                    Equipa tu vida con los mejores gadgets y accesorios tecnológicos, diseñados para simplificar tu día
+                    a día.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold tracking-wider text-xs uppercase mb-5">Marketplace</h4>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="#" class="hover:text-white transition-colors duration-200">Catálogo de Productos</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold tracking-wider text-xs uppercase mb-5">Compañía</h4>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="#" class="hover:text-white transition-colors duration-200">Sobre Nosotros</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold tracking-wider text-xs uppercase mb-5">Soporte</h4>
+                <ul class="space-y-3 text-sm font-medium">
+                    <li><a href="#" class="hover:text-white transition-colors duration-200">Contacto y Ayuda</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-gray-800/60">
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm font-medium">
+                <p>© 2026 NovaBox. Todos los derechos reservados.</p>
+                <div class="flex gap-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition-colors duration-200">Privacidad</a>
+                    <a href="#" class="hover:text-white transition-colors duration-200">Términos</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PHONE DETAIL MODAL -->
+    <div id="detailModal" class="fixed inset-0 z-50 hidden modal-bg items-center justify-center p-4">
+        <div
+            class="bg-bone-white rounded-[24px] max-w-4xl w-full max-h-[90vh] overflow-y-auto slide-up border border-slate-700 shadow-2xl relative">
+            <div class="absolute top-4 right-4 z-50">
+                <button id="btnCloseDetail"
+                    class="p-2 bg-black/20 hover:bg-black/40 text-white rounded-full backdrop-blur-sm transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div id="detailContent" class="w-full text-white"></div>
+        </div>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast"
+        class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-deep-coffee text-white px-5 py-3 rounded-xl shadow-lg hidden z-50 text-sm font-medium">
+    </div>
+
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
