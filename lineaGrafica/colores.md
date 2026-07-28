@@ -1,107 +1,83 @@
-# Paleta de Colores Corporativa - Earth Tones
+# Paleta de Colores - Estilo Dark Tech / Cyberpunk
 
 ## Descripción General
-Paleta de 8 tonos basada en **tonos tierra (Earth Tones)**, orgánicos y naturales. Línea gráfica sofisticada, cálida y equilibrada, ideal para marcas que buscan transmitir autenticidad, sostenibilidad y elegancia rústica.
+La paleta actual del proyecto ha evolucionado hacia un estilo **Tech / Dark Mode**, utilizando tonos muy oscuros para los fondos y acentos neón o vibrantes (cian, azul, violeta). 
+*Nota: Los nombres de las variables/clases en el código mantienen su denominación original (ej. "deep-coffee", "bone-white"), pero sus valores hexadecimales fueron modificados para esta nueva línea gráfica tecnológica.*
 
 ---
 
 ## Especificación Técnica de Colores
 
-### 1. Marrón Café Oscuro (Deep Coffee)
-- **Hex:** `#4B3333`
-- **Uso:** Color de texto principal, logos, pies de página
-- **Función:** Aporta seriedad y contraste (reemplaza al negro puro)
+### 1. "Deep Coffee" (Blanco Tiza / Slate 50)
+- **Clase:** `deep-coffee`
+- **Hex:** `#f8fafc`
+- **Función Visual:** Texto principal o títulos sobre fondos oscuros, aportando un altísimo contraste (es casi blanco).
 
-### 2. Crema / Hueso (Bone White)
-- **Hex:** `#F0E6D8`
-- **Uso:** Color de fondo principal
-- **Función:** Más suave que el blanco puro, reduce fatiga visual, aporta calidez
+### 2. "Bone White" (Azul Noche Oscuro / Slate 900)
+- **Clase:** `bone-white`
+- **Hex:** `#0f172a`
+- **Función Visual:** Color de fondo principal. Proporciona la base profunda y oscura (Dark Mode) de la aplicación.
 
-### 3. Taupe / Marrón Rosado (Mauve Brown)
-- **Hex:** `#9E8478`
-- **Uso:** Color secundario neutro
-- **Función:** Bordes, iconos sutiles, fondos de tarjetas
+### 3. "Mauve Brown" (Gris Pizarra / Slate 400)
+- **Clase:** `mauve-brown`
+- **Hex:** `#94a3b8`
+- **Función Visual:** Textos secundarios, descripciones, etiquetas o elementos sutiles que no deben competir con el texto principal.
 
-### 4. Verde Oliva Medio (Sage/Olive Green)
-- **Hex:** `#838358`
-- **Uso:** Color corporativo primario
-- **Función:** Transmite naturaleza y crecimiento
+### 4. "Sage Olive" (Cian Neón / Aqua)
+- **Clase:** `sage-olive`
+- **Hex:** `#00f0ff`
+- **Función Visual:** Color de acento vibrante principal. Llama poderosamente la atención en botones, iconos y llamadas a la acción (estilo neón).
 
-### 5. Verde Oliva Oscuro (Dark Olive)
-- **Hex:** `#6A6A3E`
-- **Uso:** Versión profunda del verde oliva
-- **Función:** Estados hover, elementos con más peso visual
+### 5. "Dark Olive" (Azul Intenso / Sky 600)
+- **Clase:** `dark-olive`
+- **Hex:** `#0284c7`
+- **Función Visual:** Color complementario para botones, estados "hover" o acentos de profundidad.
 
-### 6. Gris Azulado Pálido (Ice Grey)
-- **Hex:** `#DCE2E5`
-- **Uso:** Punto de equilibrio frío
-- **Función:** Fondos de secciones técnicas, formularios, limpiar la vista
+### 6. "Ice Grey" (Gris Oscuro / Slate 800)
+- **Clase:** `ice-grey`
+- **Hex:** `#1e293b`
+- **Función Visual:** Fondos de tarjetas, modales o secciones secundarias, para diferenciarlos sutilmente del fondo oscuro principal.
 
-### 7. Ocre / Arena (Sandy Yellow)
-- **Hex:** `#F4CB88`
-- **Uso:** Color de acento luminoso
-- **Función:** Aporta luz y optimismo, CTAs suaves
+### 7. "Sandy Yellow" (Azul Eléctrico / Blue 500)
+- **Clase:** `sandy-yellow`
+- **Hex:** `#3b82f6`
+- **Función Visual:** Acento de color primario para iconos técnicos, distintivos, insignias o elementos resaltados.
 
-### 8. Terracota (Soft Terracotta)
-- **Hex:** `#CF7064`
-- **Uso:** Color de acento principal
-- **Función:** Aporta energía, humanidad y calidez, botones importantes
+### 8. "Soft Terracotta" (Violeta Vibrante / Violet 500)
+- **Clase:** `soft-terracotta`
+- **Hex:** `#8b5cf6`
+- **Función Visual:** Color de acento secundario para dar variedad visual y crear degradados o detalles llamativos frente a la predominancia del azul/cian.
 
 ---
 
 ## Línea Gráfica (Look & Feel)
 
 ### Características Principales
-- **Orgánico y Natural:** Conectado con lo natural, artesanal y sostenible
-- **Sofisticación "Muted":** Colores apagados/saturación media-baja
-- **Elegancia Matte:** Percepción de mayor calidad y tranquilidad
-- **Equilibrio Cálido-Frío:** Predominio cálido con toques fríos modernos
-- **Minimalismo Cálido:** Acogedor tipo "Hygge"
+- **Tecnológico y Moderno:** Transmite innovación y está alineado a los estándares visuales del hardware/software actual.
+- **Dark Mode Nativo:** Adaptado perfectamente a interfaces oscuras, reduciendo la fatiga visual de las pantallas y resaltando intensamente los colores.
+- **Acentos Neón / Cyberpunk:** Uso de colores de alta saturación (cian, violeta, azul eléctrico) que evocan un estilo digital y futurista.
+- **Alto Contraste:** Uso de textos claros sobre fondos casi negros para garantizar legibilidad.
 
 ---
 
 ## Psicología de Marca
 
 Esta paleta comunica:
--  **Sostenibilidad y Ecología**
-- 🎨 **Artesanía y Calidad**
-- 🧘 **Bienestar y Calma**
-- ✨ **Autenticidad y Cercanía**
+- 🚀 **Innovación y Tecnología**
+- 🎮 **Estilo Tech / Gaming / Cyberpunk**
+- 🌌 **Modernidad y Vanguardia**
+- ⚡ **Energía y Dinamismo Digital**
 
 ---
 
 ## Industrias Recomendadas
 
-✅ **Cosmética Natural / Skincare**  
-✅ **Café de Especialidad / Panadería Artesanal**  
-✅ **Decoración de Interiores / Arquitectura**  
-✅ **Moda Sostenible (Slow Fashion)**  
-✅ **Hoteles Boutique / Spas**
-
----
-
-## Guía de Aplicación (Regla 60-30-10)
-
-### 60% - Color Dominante
-- Crema `#F0E6D8`
-- Gris Azulado `#DCE2E5`
-- *Uso:* Fondos grandes, mantener diseño limpio
-
-### 30% - Color Secundario
-- Verde Oliva `#838358` y `#6A6A3E`
-- Taupe `#9E8478`
-- *Uso:* Encabezados, imágenes, formas geométricas, bloques de contenido
-
-### 10% - Color de Acento
-- Terracota `#CF7064`
-- Ocre `#F4CB88`
-- *Uso:* Botones de acción (CTA), iconos importantes, destacados
-
-### Texto
-- Marrón Oscuro `#4B3333`
-- *Nota:* Usar en lugar de negro puro para mantener armonía
+✅ **Electrónica y Tecnología (Gadgets)**  
+✅ **Desarrollo de Software / Tiendas Tech**  
+✅ **Gaming y Componentes de PC**  
+✅ **Web3 y Proyectos Digitales**
 
 ---
 
 ## Keywords de la Marca
-`#Natural` `#Orgánico` `#Sostenible` `#Artesanal` `#Cálido` `#Elegante` `#Auténtico` `#Minimalista`
+`#Tecnología` `#DarkMode` `#Cyberpunk` `#Moderno` `#Innovador` `#Digital` `#Neón`
