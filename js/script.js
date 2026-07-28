@@ -134,19 +134,32 @@ function openDetail(id) {
           </div>
           <div class="bg-ice-grey p-3 rounded-xl border border-slate-700">
             <div class="text-mauve-brown mb-1">Energía</div>
-            <div class="font-bold text-deep-coffee">${p.energy || '-'}</div>
+            <div class="font-bold text-deep-coffee">${p.power || '-'}</div>
           </div>
         </div>
         
         <!-- Large Text Area for description -->
-        <div class="text-deep-coffee text-sm leading-relaxed mb-8 bg-ice-grey p-5 rounded-xl border border-slate-700 max-h-[200px] overflow-y-auto shadow-inner">
-          <p><strong>Características:</strong> ${p.desc}</p>
+        <div class="text-deep-coffee text-sm leading-relaxed mb-6 bg-ice-grey p-5 rounded-xl border border-slate-700 max-h-[200px] overflow-y-auto shadow-inner">
+          <p><strong>Características:</strong> ${p.features || 'No especificado'}</p>
           ${p.instructions ? `<p class="mt-2"><strong>Instrucciones:</strong> ${p.instructions}</p>` : ''}
-          ${p.warnings ? `<p class="mt-2"><strong>Cuidados:</strong> ${p.warnings}</p>` : ''}
+          ${p.warnings ? `<p class="mt-2 text-red-600"><strong>⚠️ Cuidados:</strong> ${p.warnings}</p>` : ''}
+        </div>
+
+        ${p.fun_fact ? `
+        <div class="mb-6 bg-amber-50 border-l-4 border-amber-400 p-4 rounded-r-xl">
+          <p class="text-xs text-amber-800 font-bold uppercase tracking-wider mb-1">💡 ¿Sabías que?</p>
+          <p class="text-sm text-amber-900">${p.fun_fact}</p>
+        </div>
+        ` : ''}
+
+        <!-- Trust Signals (Amazon Style) -->
+        <div class="flex items-center gap-4 text-xs font-medium text-slate-500 mb-6 px-1">
+           <div class="flex items-center gap-1"><svg class="w-4 h-4 text-sage-olive" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Compra Segura</div>
+           <div class="flex items-center gap-1"><svg class="w-4 h-4 text-sage-olive" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Atención Rápida</div>
         </div>
 
         <!-- Price and Order Button -->
-        <div class="mt-auto pt-4 border-t border-slate-700 flex items-center justify-between gap-6">
+        <div class="mt-auto pt-4 border-t border-slate-700 flex items-center justify-between gap-6 sticky bottom-0 bg-bone-white md:bg-transparent p-4 md:p-0 -mx-8 -mb-8 md:mx-0 md:mb-0 z-20 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] md:shadow-none">
           <div class="flex items-end gap-3">
             <div class="text-4xl font-extrabold text-deep-coffee drop-shadow-lg leading-none">${p.price}Bs.</div>
             ${p.original_price > p.price ? `<div class="text-lg text-mauve-brown line-through mb-1">${p.original_price}Bs.</div>` : ''}
@@ -161,18 +174,28 @@ function openDetail(id) {
 
   document.getElementById('detailModal').classList.remove('hidden');
   document.getElementById('detailModal').classList.add('flex');
+  history.pushState({ modal: 'detail', id: id }, '', `#producto-${id}`);
 }
 
 function closeDetail() {
   document.getElementById('detailModal').classList.add('hidden');
   document.getElementById('detailModal').classList.remove('flex');
+  if (window.location.hash.startsWith('#producto-')) {
+    history.replaceState(null, '', window.location.pathname);
+  }
 }
+
+window.addEventListener('popstate', (e) => {
+  if (document.getElementById('detailModal').classList.contains('flex')) {
+    closeDetail();
+  }
+});
 
 function sendToWhatsApp(id) {
   const p = PRODUCTS.find(x => x.id == id);
   if (!p) return;
-  const phoneNumber = "77777777";
-  const message = `Hola NovaBox! Quiero hacer un pedido de: ${p.name} por ${p.price}Bs.`;
+  const phoneNumber = "61198607";
+  const message = `Hola NovaBox! 👋\n\nMe interesa el producto *${p.name}* (ID: ${p.id}).\nPrecio: *${p.price} Bs.*\n\n¿Tienen disponibilidad?`;
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
   window.open(whatsappUrl, '_blank');
 }
@@ -215,10 +238,10 @@ async function loadCategories() {
       const categories = await response.json();
       const container = document.getElementById('brandChips');
       const footerContainer = document.getElementById('footerCategories');
-      
+
       CATEGORIES_DATA = categories;
       renderPhones();
-      
+
       if (container) {
         categories.forEach(cat => {
           // Top Brand Chips
@@ -233,7 +256,7 @@ async function loadCategories() {
             <span class="text-base font-medium text-gray-500 group-hover:text-gray-900 group-hover:scale-110 group-[.active]:text-gray-900 group-[.active]:font-bold group-[.active]:scale-110 transition-all duration-300 whitespace-nowrap text-center">${cat.name}</span>
           `;
           container.appendChild(btn);
-                 // Footer Banners
+          // Footer Banners
           if (footerContainer) {
             const footerBtn = document.createElement('div');
             footerBtn.className = 'snap-center flex-shrink-0 w-[85%] md:w-full h-full cursor-pointer relative group rounded-3xl md:rounded-none overflow-hidden shadow-2xl md:shadow-none';
@@ -298,15 +321,15 @@ const searchInput = document.getElementById('searchInput');
 if (searchInput) {
   searchInput.addEventListener('input', (e) => {
     searchQuery = e.target.value;
-    
+
     // Optionally reset brand to 'all' when searching globally
-    if(searchQuery.trim() !== '') {
+    if (searchQuery.trim() !== '') {
       activeBrand = 'all';
       document.querySelectorAll('.brand-chip').forEach(b => b.classList.remove('active'));
       const allBtn = document.querySelector('.brand-chip[data-brand="all"]');
-      if(allBtn) allBtn.classList.add('active');
+      if (allBtn) allBtn.classList.add('active');
     }
-    
+
     renderPhones();
   });
 }
@@ -330,7 +353,7 @@ const btnContactWhatsApp = document.getElementById('btnContactWhatsApp');
 if (btnContactWhatsApp) {
   btnContactWhatsApp.addEventListener('click', () => {
     // Just open normal whatsapp if not a specific product
-    window.open('https://wa.me/77777777', '_blank');
+    window.open('https://wa.me/61198607', '_blank');
   });
 }
 
