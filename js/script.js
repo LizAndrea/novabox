@@ -3,6 +3,7 @@
 // Assumes `PRODUCTS` is loaded from data.js
 let activeBrand = 'all';
 let searchQuery = '';
+let CATEGORIES_DATA = null;
 
 function conditionBadge(c) {
   return `<span class="bg-ice-grey text-white text-xs font-bold px-3 py-1 rounded-full">${c}</span>`;
@@ -71,21 +72,27 @@ function renderPhones() {
       </div>`;
     }).join('');
 
+    let catColor = '#ffffff';
+    if (CATEGORIES_DATA) {
+      const cData = CATEGORIES_DATA.find(c => c.name === cat);
+      if (cData && cData.color) catColor = cData.color;
+    }
+
     html += `
-    <div class="category-section relative group/cat">
-      <div class="flex items-center justify-center mb-4 md:mb-10 relative textContainer MH-mg w-full text-center">
+    <div class="category-section relative group/cat rounded-2xl md:rounded-3xl py-4 px-2 md:py-8 md:px-6" style="background-color: ${catColor}0A;">
+      <div class="flex items-center justify-start md:justify-center mb-0 md:mb-4 relative textContainer MH-mg w-full text-left md:text-center px-2 md:px-0">
         <div class="textContent a0QQm yXpte w-full">
           <div class="desktopText csCim hidden md:block w-full">
             <h2 class="text-center w-full"><span>${cat}</span></h2>
           </div>
           <div class="mobileText TPiEz md:hidden w-full">
-            <h2 class="text-center w-full"><span>${cat}</span></h2>
+            <h2 class="text-left w-full font-extrabold text-2xl px-1"><span>${cat}</span></h2>
           </div>
         </div>
       </div>
       
       <div class="relative w-full">
-        <div id="${catId}" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-6 pb-4 md:pb-8 pt-2 md:pt-4 px-1 md:px-0">
+        <div id="${catId}" class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 sm:gap-4 md:gap-6 pb-4 md:pb-8 pt-0 md:pt-4 px-1 md:px-0">
           ${cardsHtml}
         </div>
       </div>
@@ -208,6 +215,9 @@ async function loadCategories() {
       const categories = await response.json();
       const container = document.getElementById('brandChips');
       const footerContainer = document.getElementById('footerCategories');
+      
+      CATEGORIES_DATA = categories;
+      renderPhones();
       
       if (container) {
         categories.forEach(cat => {
