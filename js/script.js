@@ -63,7 +63,7 @@ function renderPhones() {
 
       <!-- Content Area (Inside Card) -->
       <div class="flex flex-col items-start text-left w-full h-full px-2 pb-2 md:px-6 md:pb-6 flex-1">
-        <h3 class="font-semibold text-sm md:text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">${p.name}</h3>
+        <h3 class="font-semibold text-sm md:text-[1.4rem] text-black leading-snug w-full tracking-tight truncate">#${p.id} - ${p.name}</h3>
         <p class="text-[0.65rem] md:text-[1rem] text-gray-700 mt-0.5 md:mt-1 w-full tracking-wide truncate">${p.brand || 'Accesorio'}</p>
         
         <!-- Category Badge -->
@@ -147,7 +147,7 @@ function openDetail(id) {
           <span class="text-xs md:text-sm text-mauve-brown font-medium uppercase tracking-wider">${p.brand}</span>
         </div>
         
-        <h2 class="text-2xl md:text-4xl font-extrabold text-deep-coffee mb-1 md:mb-2 leading-tight">${p.name}</h2>
+        <h2 class="text-2xl md:text-4xl font-extrabold text-deep-coffee mb-1 md:mb-2 leading-tight">#${p.id} - ${p.name}</h2>
         
         <div class="grid grid-cols-2 gap-2 md:gap-4 mb-4 md:mb-6 text-xs md:text-sm mt-2 md:mt-4">
           <div class="bg-ice-grey p-2 md:p-3 rounded-lg md:rounded-xl border border-slate-700">

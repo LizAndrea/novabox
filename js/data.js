@@ -295,7 +295,7 @@ const PRODUCTS = [
   {
     "id": "20",
     "name": "Lámpara de Mesa Cristal (Diamante)",
-    "price": 110.0,
+    "price": 95.0,
     "min_price": 80.0,
     "category": "Hogar",
     "brand": "Diamond Table Lamp",
