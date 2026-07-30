@@ -58,7 +58,8 @@ function renderPhones() {
       
       <!-- Image Container -->
       <div class="w-full h-[120px] md:h-[260px] flex items-center justify-center p-2 md:p-6 relative">
-        <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105" alt="${p.name} - ${catName} - ${p.brand || 'Marca'}" />
+        ${p.estado === 'vendido' ? `<div class="absolute top-2 right-2 bg-red-600 text-white text-[0.6rem] md:text-sm font-bold px-2 py-1 rounded shadow-md z-10 uppercase tracking-wider transform rotate-3">Vendido</div>` : ''}
+        <img src="${imgUrl}" class="max-w-full max-h-full object-contain transition-transform duration-500 group-hover:scale-105 ${p.estado === 'vendido' ? 'opacity-50 grayscale' : ''}" alt="${p.name} - ${catName} - ${p.brand || 'Marca'}" />
       </div>
 
       <!-- Content Area (Inside Card) -->
@@ -135,7 +136,8 @@ function openDetail(id) {
     <div class="flex flex-col md:flex-row h-full">
       <!-- Left side: Image -->
       <div class="md:w-1/2 relative bg-white p-4 md:p-8 flex items-center justify-center min-h-[220px] md:min-h-[300px]">
-        <img src="${imgUrl}" class="max-h-64 md:max-h-96 w-auto object-contain rounded-xl shadow-xl md:shadow-2xl transition-transform hover:scale-105 duration-500" alt="${p.name} - ${p.category || 'Categoría'} - ${p.brand || 'Marca'}" />
+        ${p.estado === 'vendido' ? `<div class="absolute top-4 right-4 md:top-6 md:right-6 bg-red-600 text-white text-sm md:text-lg font-black px-3 py-1 rounded shadow-lg z-20 uppercase tracking-widest transform rotate-12 border-2 border-white">Vendido</div>` : ''}
+        <img src="${imgUrl}" class="max-h-64 md:max-h-96 w-auto object-contain rounded-xl shadow-xl md:shadow-2xl transition-transform hover:scale-105 duration-500 ${p.estado === 'vendido' ? 'opacity-50 grayscale' : ''}" alt="${p.name} - ${p.category || 'Categoría'} - ${p.brand || 'Marca'}" />
         <div class="absolute top-4 left-4 md:top-6 md:left-6 z-10 drop-shadow-md">
           ${conditionBadge(p.category || 'Producto')}
         </div>
