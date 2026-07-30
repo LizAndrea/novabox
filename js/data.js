@@ -474,7 +474,7 @@ const PRODUCTS = [
     {
       "id": "30",
       "name": "Mouse Gamer RGB (X9)",
-      "price": 75.0,
+      "price": 70.0,
       "min_price": 50.0,
       "category": "Tecnología",
       "brand": "X9 Game Mouse",
