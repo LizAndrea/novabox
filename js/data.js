@@ -10,7 +10,7 @@ const PRODUCTS = [
   {
     "id": "1",
     "name": "Reloj de Pared - Lampara de colroes - Retro de Vinilo",
-    "price": 120.0,
+    "price": 100.0,
     "min_price": 90.0,
     "category": "Decoración / Regalos",
     "brand": "Tema Musical (Piano/Violín)",
@@ -40,7 +40,7 @@ const PRODUCTS = [
   {
     "id": "3",
     "name": "Lámpara de Mesa Minimalista LED",
-    "price": 120.0,
+    "price": 90.0,
     "min_price": 90.0,
     "category": "Hogar",
     "brand": "Desk Lamp",
@@ -55,7 +55,7 @@ const PRODUCTS = [
   {
     "id": "4",
     "name": "Luces LED Calabaza",
-    "price": 60.0,
+    "price": 45.0,
     "min_price": 45.0,
     "category": "Decoración / Regalos",
     "brand": "ME3010 / Solar Flower Lights",
@@ -70,7 +70,7 @@ const PRODUCTS = [
   {
     "id": "5",
     "name": "Parlante Bola de Luces Mágica",
-    "price": 80.0,
+    "price": 90.0,
     "min_price": 60.0,
     "category": "Audio",
     "brand": "LED Magic Ball Light",
@@ -85,7 +85,7 @@ const PRODUCTS = [
   {
     "id": "6",
     "name": "Mouse Inalámbrico Tri-Modo",
-    "price": 90.0,
+    "price": 85.0,
     "min_price": 70.0,
     "category": "Tecnología",
     "brand": "BL112",
@@ -100,7 +100,7 @@ const PRODUCTS = [
   {
     "id": "7",
     "name": "Audifonos TWS ColorNow",
-    "price": 70.0,
+    "price": 75.0,
     "min_price": 50.0,
     "category": "Audio",
     "brand": "FlyTWS 2E (ColorNow)",
@@ -130,7 +130,7 @@ const PRODUCTS = [
   {
     "id": "9",
     "name": "Calentador de Manos + PowerBank",
-    "price": 100.0,
+    "price": 90.0,
     "min_price": 80.0,
     "category": "Hogar",
     "brand": "Cute Pet (6000 mAh)",
@@ -145,7 +145,7 @@ const PRODUCTS = [
   {
     "id": "10",
     "name": "Audífonos TWS Ultrapods Pro",
-    "price": 80.0,
+    "price": 65.0,
     "min_price": 55.0,
     "category": "Audio",
     "brand": "Ultrapods Pro",
@@ -160,7 +160,7 @@ const PRODUCTS = [
   {
     "id": "11",
     "name": "Bola de burbuja solar Cadena de luz LED Bola de cristal",
-    "price": 60.0,
+    "price": 50.0,
     "min_price": 45.0,
     "category": "Decoración / Regalos",
     "brand": "Esféricas tipo Burbuja",
@@ -175,7 +175,7 @@ const PRODUCTS = [
   {
     "id": "12",
     "name": "Parlante Bluetooth Compacto - X1 Music Engine 3202",
-    "price": 50.0,
+    "price": 70.0,
     "min_price": 35.0,
     "category": "Audio",
     "brand": "MOIC Wireless X",
@@ -190,7 +190,7 @@ const PRODUCTS = [
   {
     "id": "13",
     "name": "Muñeco de Nieve LED Solar",
-    "price": 50.0,
+    "price": 45.0,
     "min_price": 35.0,
     "category": "Decoración / Regalos",
     "brand": "Adorno Navideño",
@@ -205,7 +205,7 @@ const PRODUCTS = [
   {
     "id": "14",
     "name": "Audífonos On-Ear Q50",
-    "price": 110.0,
+    "price": 50.0,
     "min_price": 80.0,
     "category": "Audio",
     "brand": "Q50 (Microlab)",
@@ -220,7 +220,7 @@ const PRODUCTS = [
   {
     "id": "15",
     "name": "Audífonos Inalámbricos Deportivos",
-    "price": 60.0,
+    "price": 55.0,
     "min_price": 45.0,
     "category": "Audio",
     "brand": "i10 Neckband Earbuds",
@@ -265,7 +265,7 @@ const PRODUCTS = [
   {
     "id": "18",
     "name": "Parlante Bluetooth para Ducha",
-    "price": 50.0,
+    "price": 35.0,
     "min_price": 35.0,
     "category": "Audio",
     "brand": "Waterproof Shower Speaker",
@@ -280,7 +280,7 @@ const PRODUCTS = [
   {
     "id": "19",
     "name": "Lámpara LED 3D Ilusión Óptica",
-    "price": 75.0,
+    "price": 50.0,
     "min_price": 50.0,
     "category": "Decoración / Regalos",
     "brand": "3D Illusion Lamp",
@@ -325,7 +325,7 @@ const PRODUCTS = [
   {
     "id": "22",
     "name": "Mouse Gamer G305 (Genérico)",
-    "price": 160.0,
+    "price": 140.0,
     "min_price": 120.0,
     "category": "Tecnología",
     "brand": "G305 Lightspeed (Logitech)",
@@ -385,7 +385,7 @@ const PRODUCTS = [
   {
     "id": "26",
     "name": "Lienzo / Tapiz Navideño LED",
-    "price": 60.0,
+    "price": 45.0,
     "min_price": 45.0,
     "category": "Decoración / Regalos",
     "brand": "Muñeco de Nieve con Iluminación",
@@ -415,7 +415,7 @@ const PRODUCTS = [
   {
     "id": "28",
     "name": "Lámpara Solar Conmemorativa",
-    "price": 75.0,
+    "price": 65.0,
     "min_price": 55.0,
     "category": "Decoración / Regalos",
     "brand": "Cruz con Rosas en Piedra",
@@ -475,7 +475,7 @@ const PRODUCTS = [
   {
     "id": "32",
     "name": "Mini Parlante M3 Metalizado",
-    "price": 50.0,
+    "price": 45.0,
     "min_price": 35.0,
     "category": "Audio",
     "brand": "M3 Pairable Wireless Speaker",
@@ -505,7 +505,7 @@ const PRODUCTS = [
   {
     "id": "34",
     "name": "Luz Nocturna LED con Sensor",
-    "price": 45.0,
+    "price": 60.0,
     "min_price": 30.0,
     "category": "Hogar",
     "brand": "Intelligent Night Light",
@@ -520,7 +520,7 @@ const PRODUCTS = [
   {
     "id": "35",
     "name": "Calentador y Esterilizador (Disney)",
-    "price": 200.0,
+    "price": 180.0,
     "min_price": 160.0,
     "category": "Hogar",
     "brand": "EL-957A (Disney Baby)",
@@ -535,7 +535,7 @@ const PRODUCTS = [
   {
     "id": "36",
     "name": "Radio Reproductor Portátil",
-    "price": 180.0,
+    "price": 80.0,
     "min_price": 150.0,
     "category": "Audio",
     "brand": "LT-IPHONE 6 (Leotec)",
@@ -580,7 +580,7 @@ const PRODUCTS = [
   {
     "id": "39",
     "name": "Mini Ventilador de Bolsillo",
-    "price": 40.0,
+    "price": 38.0,
     "min_price": 30.0,
     "category": "Hogar",
     "brand": "Pocket Fan",
@@ -595,7 +595,7 @@ const PRODUCTS = [
   {
     "id": "40",
     "name": "Proyector de Luces LED - Varios",
-    "price": 80.0,
+    "price": 65.0,
     "min_price": 60.0,
     "category": "Decoración / Regalos",
     "brand": "LED Projection Light",

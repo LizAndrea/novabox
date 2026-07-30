@@ -75,8 +75,8 @@ function renderPhones() {
         
         <!-- Price -->
         <div class="mt-2 md:mt-3 flex items-baseline gap-1.5 md:gap-2">
-          <span class="text-sm md:text-xl font-extrabold text-slate-900">${p.min_price || p.price} Bs.</span>
-          ${p.original_price > (p.min_price || p.price) ? `<span class="text-[0.65rem] md:text-xs text-gray-400 line-through">${p.original_price} Bs.</span>` : ''}
+          <span class="text-sm md:text-xl font-extrabold text-slate-900">${p.price} Bs.</span>
+          ${p.original_price > p.price ? `<span class="text-[0.65rem] md:text-xs text-gray-400 line-through">${p.original_price} Bs.</span>` : ''}
         </div>
         
         <!-- Bottom Row: Color variants & Pedir Button -->
@@ -183,10 +183,10 @@ function openDetail(id) {
         <!-- Price and Order Button -->
         <div class="mt-auto pt-3 md:pt-4 border-t border-slate-700 flex items-center justify-between gap-4 md:gap-6 sticky bottom-0 bg-bone-white md:bg-transparent p-3 md:p-0 -mx-5 -mb-5 md:mx-0 md:mb-0 z-20 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.1)] md:shadow-none">
           <div class="flex flex-col gap-1">
-            <div class="text-[0.65rem] md:text-xs text-mauve-brown font-bold uppercase tracking-wider">Precio Mínimo</div>
+            <div class="text-[0.65rem] md:text-xs text-mauve-brown font-bold uppercase tracking-wider">Precio</div>
             <div class="flex items-end gap-2 md:gap-3">
-              <div class="text-3xl md:text-4xl font-extrabold text-deep-coffee drop-shadow-lg leading-none">${p.min_price || p.price}Bs.</div>
-              ${p.original_price > (p.min_price || p.price) ? `<div class="text-sm md:text-lg text-mauve-brown line-through mb-1">${p.original_price}Bs.</div>` : ''}
+              <div class="text-3xl md:text-4xl font-extrabold text-deep-coffee drop-shadow-lg leading-none">${p.price}Bs.</div>
+              ${p.original_price > p.price ? `<div class="text-sm md:text-lg text-mauve-brown line-through mb-1">${p.original_price}Bs.</div>` : ''}
             </div>
           </div>
           <button id="btnModalOrder" data-id="${p.id}" class="flex-1 bg-sage-olive hover:bg-dark-olive text-bone-white font-bold py-3.5 md:py-4 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2 group">
