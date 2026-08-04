@@ -69,7 +69,7 @@ const PRODUCTS = [
       "warnings": "Limpiar el panel solar si se llena de polvo para no perder eficiencia.",
       "fun_fact": "Tienen sensor fotovoltaico: se encienden solas al anochecer y se apagan al amanecer.",
       "image": "assets/images/productos/oficial/04 - Luces LED Calabaza Solares/04 - Luces de calabaza Solar - Prendido.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "5",
@@ -133,7 +133,7 @@ const PRODUCTS = [
       "warnings": "Limpiar almohadillas con paño ligeramente húmedo; no doblar bruscamente.",
       "fun_fact": "Permite conexión vía cable AUX 3.5mm si te quedas sin batería.",
       "image": "assets/images/productos/oficial/08 - Audífonos SY-T2 Bluetooth - Wired Headset/08 - Audífonos SY-T2 Bluetooth - Wired Headset-clean.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "9",
@@ -181,7 +181,7 @@ const PRODUCTS = [
       "warnings": "El panel debe recibir al menos 6 horas de sol directo para brillar toda la noche.",
       "fun_fact": "El acrílico burbuja es ultra resistente a caídas y granizo leve.",
       "image": "assets/images/productos/oficial/11 - Bola de burbuja solar luz Led/11 - Bola de burbuja solar luz Led - 01.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "12",
@@ -293,7 +293,7 @@ const PRODUCTS = [
       "warnings": "Resistente a salpicaduras, pero NO sumergible bajo el agua.",
       "fun_fact": "Incluye botones integrados para contestar llamadas en manos libres.",
       "image": "assets/images/productos/oficial/18 - Parlante Bluetooth para Ducha/18 - Parlante Bluetooth para Ducha - 01.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "19",
@@ -325,7 +325,7 @@ const PRODUCTS = [
       "warnings": "Limpiar con paño de microfibra seco para evitar rayones en el acrílico.",
       "fun_fact": "El grabado geométrico proyecta una rosa o estrella de luz a su alrededor.",
       "image": "assets/images/productos/oficial/20 - Lámpara de Mesa Cristal (Diamante)/20 - Lámpara de Mesa Cristal (Diamante) - 01.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "21",
@@ -373,7 +373,7 @@ const PRODUCTS = [
       "warnings": "No mojar en exceso si la tapa del puerto de carga está abierta.",
       "fun_fact": "El marco de mosquetón rodea todo el perímetro del parlante dándole rigidez.",
       "image": "assets/images/productos/oficial/23 - Parlante Portátil (Clip 3 Estilo)/23 - Parlante Portátil (Clip 3 Estilo) - 01.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "24",
@@ -517,7 +517,7 @@ const PRODUCTS = [
       "warnings": "Cargar con adaptadores estándar de 5V 1A.",
       "fun_fact": "Se pueden emparejar dos parlantes M3 al mismo celular para sonido estéreo TWS.",
       "image": "assets/images/productos/oficial/32 - Mini Parlante M3 Metalizado/32 - Mini Parlante M3 Metalizado - 01.jpg",
-      "estado": ""
+      "estado": "vendido"
     },
     {
       "id": "33",
