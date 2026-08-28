@@ -10,8 +10,8 @@ const PRODUCTS = [
   {
     "id": "1",
     "name": "Reloj de Pared - Lampara de colroes - Retro de Vinilo",
-    "price": 100.0,
-    "min_price": 90.0,
+    "price": 100,
+    "min_price": 90,
     "category": "Decoración / Regalos",
     "brand": "Tema Musical (Piano/Violín)",
     "color": "Negro (Luz RGB)",
@@ -26,8 +26,8 @@ const PRODUCTS = [
   {
     "id": "2",
     "name": "Cámara PTZ Solar 4G",
-    "price": 550.0,
-    "min_price": 450.0,
+    "price": 550,
+    "min_price": 450,
     "category": "Seguridad / Domótica",
     "brand": "Genérico 4G (Doble Antena)",
     "color": "Blanco",
@@ -37,13 +37,13 @@ const PRODUCTS = [
     "warnings": "Asegurar buena cobertura del operador móvil seleccionado.",
     "fun_fact": "Funciona totalmente aislada de la red eléctrica gracias a su panel solar.",
     "image": "assets/images/productos/oficial/02 - Cámara PTZ Solar 4G/02 - Cámara PTZ Solar 4G - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "3",
     "name": "Lámpara de Mesa Minimalista LED",
-    "price": 90.0,
-    "min_price": 90.0,
+    "price": 90,
+    "min_price": 90,
     "category": "Hogar",
     "brand": "Desk Lamp",
     "color": "Plateado / Acero",
@@ -58,8 +58,8 @@ const PRODUCTS = [
   {
     "id": "4",
     "name": "Luces LED Calabaza",
-    "price": 45.0,
-    "min_price": 45.0,
+    "price": 45,
+    "min_price": 45,
     "category": "Decoración / Regalos",
     "brand": "ME3010 / Solar Flower Lights",
     "color": "Naranja y Negro",
@@ -69,12 +69,13 @@ const PRODUCTS = [
     "warnings": "Limpiar el panel solar si se llena de polvo para no perder eficiencia.",
     "fun_fact": "Tienen sensor fotovoltaico: se encienden solas al anochecer y se apagan al amanecer.",
     "image": "assets/images/productos/oficial/04 - Luces LED Calabaza Solares/04 - Luces de calabaza Solar - Prendido.jpg",
+    "estado": "vendido"
   },
   {
     "id": "5",
     "name": "Parlante Bola de Luces Mágica",
-    "price": 90.0,
-    "min_price": 60.0,
+    "price": 90,
+    "min_price": 60,
     "category": "Audio",
     "brand": "LED Magic Ball Light",
     "color": "Base Negra / Cúpula Cristal",
@@ -84,13 +85,13 @@ const PRODUCTS = [
     "warnings": "No girar la bola plástica superior con la mano forzando el motor.",
     "fun_fact": "El sensor de micrófono interno ajusta el destello de la luz al ritmo del bajo.",
     "image": "assets/images/productos/oficial/05 - Luces Mágica con Parlante/05 - Luces Mágica con Parlante - arriba.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "6",
     "name": "Mouse Inalámbrico Tri-Modo",
-    "price": 85.0,
-    "min_price": 70.0,
+    "price": 85,
+    "min_price": 70,
     "category": "Tecnología",
     "brand": "BL112",
     "color": "Blanco (Milky White)",
@@ -100,12 +101,13 @@ const PRODUCTS = [
     "warnings": "Usar sobre pad mouse para no desgastar los deslizadores inferiores.",
     "fun_fact": "Permite alternar de la Laptop de trabajo a la Tablet con presionar un botón.",
     "image": "assets/images/productos/oficial/06 - Mouse Inalámbrico Tri-Modo/06 - Mouse Inalámbrico Tri-Modo - Caja.jpg",
+    "estado": "vendido"
   },
   {
     "id": "7",
     "name": "Audifonos TWS ColorNow",
-    "price": 75.0,
-    "min_price": 50.0,
+    "price": 75,
+    "min_price": 50,
     "category": "Audio",
     "brand": "FlyTWS 2E (ColorNow)",
     "color": "Negro",
@@ -115,13 +117,13 @@ const PRODUCTS = [
     "warnings": "Mantener limpios los pines dorados de carga en la base del estuche.",
     "fun_fact": "Cuentan con encendido y conexión automática apenas abres la tapa del estuche.",
     "image": "assets/images/productos/oficial/07 -Audifonos TWS ColorNow/07 -Audifonos TWS ColorNow - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "8",
     "name": "Audífonos SY-T2 Bluetooth & Wired Headset",
-    "price": 130.0,
-    "min_price": 100.0,
+    "price": 130,
+    "min_price": 100,
     "category": "Audio",
     "brand": "Pure SY-T2 (Herophone)",
     "color": "Blanco Mate",
@@ -131,12 +133,13 @@ const PRODUCTS = [
     "warnings": "Limpiar almohadillas con paño ligeramente húmedo; no doblar bruscamente.",
     "fun_fact": "Permite conexión vía cable AUX 3.5mm si te quedas sin batería.",
     "image": "assets/images/productos/oficial/08 - Audífonos SY-T2 Bluetooth - Wired Headset/08 - Audífonos SY-T2 Bluetooth - Wired Headset-clean.jpg",
+    "estado": "vendido"
   },
   {
     "id": "9",
     "name": "Calentador de Manos + PowerBank",
-    "price": 90.0,
-    "min_price": 80.0,
+    "price": 90,
+    "min_price": 80,
     "category": "Hogar",
     "brand": "Cute Pet (6000 mAh)",
     "color": "Celeste / Varios",
@@ -146,12 +149,13 @@ const PRODUCTS = [
     "warnings": "No usar la función de calentador mientras estés cargando la batería en el enchufe.",
     "fun_fact": "Alcanza temperaturas reconfortantes entre 45°C y 55°C en solo 5 segundos.",
     "image": "assets/images/productos/oficial/09 - Calentador de Manos + PowerBank/09 - Calentador de Manos + PowerBank - manos.jpg",
+    "estado": "vendido"
   },
   {
     "id": "10",
     "name": "Audífonos TWS Ultrapods Pro",
-    "price": 65.0,
-    "min_price": 55.0,
+    "price": 65,
+    "min_price": 55,
     "category": "Audio",
     "brand": "Ultrapods Pro",
     "color": "Negro / Transparente",
@@ -161,13 +165,13 @@ const PRODUCTS = [
     "warnings": "Evitar caídas del estuche acrílico para no rayar o fisurar la transparencia.",
     "fun_fact": "Muestra el porcentaje exacto de batería restante en número digital dentro del estuche.",
     "image": "assets/images/productos/oficial/10 - Audífonos TWS Ultrapods Pro/10 - Audífonos TWS Ultrapods Pro - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "11",
     "name": "Bola de burbuja solar Cadena de luz LED Bola de cristal",
-    "price": 50.0,
-    "min_price": 45.0,
+    "price": 50,
+    "min_price": 45,
     "category": "Decoración / Regalos",
     "brand": "Esféricas tipo Burbuja",
     "color": "Transparente / Cable Negro",
@@ -177,12 +181,13 @@ const PRODUCTS = [
     "warnings": "El panel debe recibir al menos 6 horas de sol directo para brillar toda la noche.",
     "fun_fact": "El acrílico burbuja es ultra resistente a caídas y granizo leve.",
     "image": "assets/images/productos/oficial/11 - Bola de burbuja solar luz Led/11 - Bola de burbuja solar luz Led - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "12",
     "name": "Parlante Bluetooth Compacto - X1 Music Engine 3202",
-    "price": 70.0,
-    "min_price": 35.0,
+    "price": 70,
+    "min_price": 35,
     "category": "Audio",
     "brand": "MOIC Wireless X",
     "color": "Rosado / Gris",
@@ -192,13 +197,13 @@ const PRODUCTS = [
     "warnings": "Evitar caídas e impactos fuertes en el cono del parlante.",
     "fun_fact": "Incorpora radio FM integrada mediante la conexión del cable de carga como antena.",
     "image": "assets/images/productos/oficial/12 - Parlante Bluetooth Compacto - X1 Music Engine 3202/12 - Parlante Bluetooth Compacto - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "13",
     "name": "Muñeco de Nieve LED Solar",
-    "price": 45.0,
-    "min_price": 35.0,
+    "price": 45,
+    "min_price": 35,
     "category": "Decoración / Regalos",
     "brand": "Adorno Navideño",
     "color": "Blanco / Rosa",
@@ -208,13 +213,13 @@ const PRODUCTS = [
     "warnings": "Guardar bajo techo en tormentas extremas.",
     "fun_fact": "El cuerpo cristalino difumina la luz creando un brillo omnidireccional.",
     "image": "assets/images/productos/oficial/13 - Muñeco de Nieve LED Solar/13 - Muñeco de Nieve LED Solar - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "14",
     "name": "Audífonos On-Ear Q50",
-    "price": 50.0,
-    "min_price": 80.0,
+    "price": 50,
+    "min_price": 80,
     "category": "Audio",
     "brand": "Q50 (Microlab)",
     "color": "Rojo",
@@ -224,12 +229,13 @@ const PRODUCTS = [
     "warnings": "Guardar en estuche para evitar rozaduras en el acabado brillante.",
     "fun_fact": "Su estructura es plegable hacia adentro para ocupar la mitad del espacio.",
     "image": "assets/images/productos/oficial/14 - Audífonos On-Ear Q50/14 - Audífonos On-Ear Q50 - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "15",
     "name": "Audífonos Inalámbricos Deportivos",
-    "price": 55.0,
-    "min_price": 45.0,
+    "price": 55,
+    "min_price": 45,
     "category": "Audio",
     "brand": "i10 Neckband Earbuds",
     "color": "Negro / Gris metálico",
@@ -239,13 +245,13 @@ const PRODUCTS = [
     "warnings": "No tirar con fuerza de los cables delgados de las gomas.",
     "fun_fact": "Los earbuds se unen entre sí por imán para que no bamboleen cuando no los usas.",
     "image": "assets/images/productos/oficial/15 - Audífonos Inalámbricos Deportivos/15 - Audífonos Inalámbricos Deportivos - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "16",
     "name": "Smartwatch Phone Cuadrado",
-    "price": 90.0,
-    "min_price": 75.0,
+    "price": 90,
+    "min_price": 75,
     "category": "Tecnología",
     "brand": "Smart Watch Phone",
     "color": "Negro",
@@ -255,13 +261,13 @@ const PRODUCTS = [
     "warnings": "Cargar con cable USB; NO es sumergible en agua.",
     "fun_fact": "Funciona tanto de forma independiente (con SIM) como de accesorio del celular.",
     "image": "assets/images/productos/oficial/16 - Smartwatch Phone Cuadrado/16 - Smartwatch Phone Cuadrado - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "17",
     "name": "Reloj Despertador Digital LED",
-    "price": 45.0,
-    "min_price": 35.0,
+    "price": 45,
+    "min_price": 35,
     "category": "Hogar",
     "brand": "MoodiCare Clock",
     "color": "Blanco (Luz LED multicolor)",
@@ -271,12 +277,13 @@ const PRODUCTS = [
     "warnings": "Evitar caídas fuertes que descalibren la pantalla LCD.",
     "fun_fact": "Utiliza cromoterapia básica (cambio de luz suave) para ayudar a conciliar el sueño.",
     "image": "assets/images/productos/oficial/17 - Reloj Despertador Digital LED/17 - Reloj Despertador Digital LED - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "18",
     "name": "Parlante Bluetooth para Ducha",
-    "price": 35.0,
-    "min_price": 35.0,
+    "price": 35,
+    "min_price": 35,
     "category": "Audio",
     "brand": "Waterproof Shower Speaker",
     "color": "Blanco / Azul",
@@ -286,12 +293,13 @@ const PRODUCTS = [
     "warnings": "Resistente a salpicaduras, pero NO sumergible bajo el agua.",
     "fun_fact": "Incluye botones integrados para contestar llamadas en manos libres.",
     "image": "assets/images/productos/oficial/18 - Parlante Bluetooth para Ducha/18 - Parlante Bluetooth para Ducha - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "19",
     "name": "Lámpara LED 3D Ilusión Óptica",
-    "price": 50.0,
-    "min_price": 50.0,
+    "price": 50,
+    "min_price": 50,
     "category": "Decoración / Regalos",
     "brand": "3D Illusion Lamp",
     "color": "Negro (Base) / Acrílico",
@@ -306,8 +314,8 @@ const PRODUCTS = [
   {
     "id": "20",
     "name": "Lámpara de Mesa Cristal (Diamante)",
-    "price": 95.0,
-    "min_price": 80.0,
+    "price": 95,
+    "min_price": 80,
     "category": "Hogar",
     "brand": "Diamond Table Lamp",
     "color": "Dorado / Cristal transparente",
@@ -317,12 +325,13 @@ const PRODUCTS = [
     "warnings": "Limpiar con paño de microfibra seco para evitar rayones en el acrílico.",
     "fun_fact": "El grabado geométrico proyecta una rosa o estrella de luz a su alrededor.",
     "image": "assets/images/productos/oficial/20 - Lámpara de Mesa Cristal (Diamante)/20 - Lámpara de Mesa Cristal (Diamante) - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "21",
     "name": "Guirnalda LED Balones de Fútbol",
-    "price": 40.0,
-    "min_price": 25.0,
+    "price": 40,
+    "min_price": 25,
     "category": "Decoración / Regalos",
     "brand": "Balones de Fútbol Americano",
     "color": "Marrón / Ámbar",
@@ -337,8 +346,8 @@ const PRODUCTS = [
   {
     "id": "22",
     "name": "Mouse Gamer G305 (Genérico)",
-    "price": 140.0,
-    "min_price": 120.0,
+    "price": 140,
+    "min_price": 120,
     "category": "Tecnología",
     "brand": "G305 Lightspeed (Logitech)",
     "color": "Blanco",
@@ -348,12 +357,13 @@ const PRODUCTS = [
     "warnings": "Limpiar sensor óptico con aire comprimido o hisopo seco.",
     "fun_fact": "El sensor HERO consume 10 veces menos energía que sensores anteriores.",
     "image": "assets/images/productos/oficial/22 - Mouse Gamer G305 (Genérico)/22 - Mouse Gamer G305 (Genérico) - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "23",
     "name": "Parlante Portátil (Clip 3 Estilo)",
-    "price": 75.0,
-    "min_price": 50.0,
+    "price": 75,
+    "min_price": 50,
     "category": "Audio",
     "brand": "Clip 3 (Estilo JBL)",
     "color": "Azul Oscuro",
@@ -363,12 +373,13 @@ const PRODUCTS = [
     "warnings": "No mojar en exceso si la tapa del puerto de carga está abierta.",
     "fun_fact": "El marco de mosquetón rodea todo el perímetro del parlante dándole rigidez.",
     "image": "assets/images/productos/oficial/23 - Parlante Portátil (Clip 3 Estilo)/23 - Parlante Portátil (Clip 3 Estilo) - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "24",
     "name": "Extractor de Leche Materna",
-    "price": 65.0,
-    "min_price": 45.0,
+    "price": 65,
+    "min_price": 45,
     "category": "Hogar",
     "brand": "Nobel",
     "color": "Celeste / Transparente",
@@ -378,13 +389,13 @@ const PRODUCTS = [
     "warnings": "Lavar y esterilizar en agua hirviendo después de cada uso.",
     "fun_fact": "El diseño de la copa imita la succión natural del bebé para estimular la leche.",
     "image": "assets/images/productos/oficial/24 - Extractor de Leche Materna/24 - Extractor de Leche Materna - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "25",
     "name": "Reflector Solar LED IP66",
-    "price": 220.0,
-    "min_price": 180.0,
+    "price": 220,
+    "min_price": 180,
     "category": "Hogar",
     "brand": "Private Street Lamp IP66",
     "color": "Naranja y Negro",
@@ -394,13 +405,13 @@ const PRODUCTS = [
     "warnings": "No cubrir el panel con ramas ni techos.",
     "fun_fact": "Incluye sensor de movimiento y temporizador mediante control remoto.",
     "image": "assets/images/productos/oficial/25 - Reflector Solar LED IP66/25 - Reflector Solar LED IP66 - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "26",
     "name": "Lienzo / Tapiz Navideño LED",
-    "price": 45.0,
-    "min_price": 45.0,
+    "price": 45,
+    "min_price": 45,
     "category": "Decoración / Regalos",
     "brand": "Muñeco de Nieve con Iluminación",
     "color": "Multicolor",
@@ -410,13 +421,13 @@ const PRODUCTS = [
     "warnings": "No lavar con agua ni doblar bruscamente para no romper los cables internos.",
     "fun_fact": "Los LED están colocados estratégicamente en las luces de los árboles y estrellas.",
     "image": "assets/images/productos/oficial/26 - Lienzo - Tapiz Navideño LED/26 - Lienzo - Tapiz Navideño LED - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "27",
     "name": "Mouse Inalámbrico Ergonómico",
-    "price": 50.0,
-    "min_price": 35.0,
+    "price": 50,
+    "min_price": 35,
     "category": "Tecnología",
     "brand": "QC Pass Geometric Mouse",
     "color": "Negro Mate",
@@ -426,12 +437,13 @@ const PRODUCTS = [
     "warnings": "Apagar el switch inferior al guardar en la mochila para ahorrar pila.",
     "fun_fact": "Guardado interno: el receptor USB se almacena dentro del compartimento de pilas.",
     "image": "assets/images/productos/oficial/27 - Mouse Inalámbrico Ergonómico/27 - Mouse Inalámbrico Ergonómico - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "28",
     "name": "Lámpara Solar Conmemorativa",
-    "price": 65.0,
-    "min_price": 55.0,
+    "price": 65,
+    "min_price": 55,
     "category": "Decoración / Regalos",
     "brand": "Cruz con Rosas en Piedra",
     "color": "Gris Piedra / Rosas Rosas",
@@ -441,13 +453,13 @@ const PRODUCTS = [
     "warnings": "Limpiar la superficie del panel para evitar acumulación de tierra.",
     "fun_fact": "Diseñada en resina sintética que imita piedra real para resistir la intemperie.",
     "image": "assets/images/productos/oficial/28 - Lampara Solar Conmemorativa/28 - Lampara Solar Conmemorativa - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "29",
     "name": "Cortador de Vellos Nasales",
-    "price": 40.0,
-    "min_price": 30.0,
+    "price": 40,
+    "min_price": 30,
     "category": "Cuidado Personal",
     "brand": "AE-3802",
     "color": "Gris Oscuro / Negro",
@@ -462,8 +474,8 @@ const PRODUCTS = [
   {
     "id": "30",
     "name": "Mouse Gamer RGB (X9)",
-    "price": 70.0,
-    "min_price": 50.0,
+    "price": 70,
+    "min_price": 50,
     "category": "Tecnología",
     "brand": "X9 Game Mouse",
     "color": "Negro",
@@ -473,12 +485,13 @@ const PRODUCTS = [
     "warnings": "Evitar caídas que desalineen el sensor óptico inferior.",
     "fun_fact": "El botón DPI altera la velocidad del puntero al instante sin ir a configuración de la PC.",
     "image": "assets/images/productos/oficial/30 - Mouse Gamer RGB (X9)/30 - Mouse Gamer RGB (X9) - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "31",
     "name": "Cortadora de Barba T9 Vintage",
-    "price": 90.0,
-    "min_price": 70.0,
+    "price": 90,
+    "min_price": 70,
     "category": "Cuidado Personal",
     "brand": "Vintage T9 Professional",
     "color": "Negro (Grabado Dragón)",
@@ -493,8 +506,8 @@ const PRODUCTS = [
   {
     "id": "32",
     "name": "Mini Parlante M3 Metalizado",
-    "price": 45.0,
-    "min_price": 35.0,
+    "price": 45,
+    "min_price": 35,
     "category": "Audio",
     "brand": "M3 Pairable Wireless Speaker",
     "color": "Azul Metalizado / Degradé",
@@ -504,13 +517,13 @@ const PRODUCTS = [
     "warnings": "Cargar con adaptadores estándar de 5V 1A.",
     "fun_fact": "Se pueden emparejar dos parlantes M3 al mismo celular para sonido estéreo TWS.",
     "image": "assets/images/productos/oficial/32 - Mini Parlante M3 Metalizado/32 - Mini Parlante M3 Metalizado - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "33",
     "name": "Timbre Inteligente con Cámara",
-    "price": 150.0,
-    "min_price": 120.0,
+    "price": 150,
+    "min_price": 120,
     "category": "Seguridad / Domótica",
     "brand": "X9 Visuable Smart Doorbell",
     "color": "Blanco con frontal negro",
@@ -520,12 +533,13 @@ const PRODUCTS = [
     "warnings": "Proteger de lluvia directa prolongada si la entrada no tiene alero.",
     "fun_fact": "Permite distorsionar la voz en tiempo real para mayor seguridad en la llamada.",
     "image": "assets/images/productos/oficial/33 - Timbre Inteligente con Cámara/33 - Timbre Inteligente con Cámara - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "34",
     "name": "Luz Nocturna LED con Sensor",
-    "price": 60.0,
-    "min_price": 30.0,
+    "price": 60,
+    "min_price": 30,
     "category": "Hogar",
     "brand": "Intelligent Night Light",
     "color": "Blanco",
@@ -535,13 +549,13 @@ const PRODUCTS = [
     "warnings": "Solo funciona en ambientes oscuros para ahorrar energía.",
     "fun_fact": "Apagado automático a los 15-20 segundos de no detectar movimiento.",
     "image": "assets/images/productos/oficial/34 - Luz Nocturna LED con Sensor/34 - Luz Nocturna LED con Sensor - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "35",
     "name": "Calentador y Esterilizador (Disney)",
-    "price": 180.0,
-    "min_price": 160.0,
+    "price": 180,
+    "min_price": 160,
     "category": "Hogar",
     "brand": "EL-957A (Disney Baby)",
     "color": "Rosado / Blanco",
@@ -551,13 +565,13 @@ const PRODUCTS = [
     "warnings": "Nunca encender sin agua en el depósito inferior para no quemar la resistencia.",
     "fun_fact": "Mantiene el biberón tibio a 40°C automáticamente durante toda la noche.",
     "image": "assets/images/productos/oficial/35 - Calentador y Esterilizador (Disney)/35 - Calentador y Esterilizador (Disney) - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "36",
     "name": "Radio Reproductor Portátil",
-    "price": 80.0,
-    "min_price": 150.0,
+    "price": 80,
+    "min_price": 150,
     "category": "Audio",
     "brand": "LT-IPHONE 6 (Leotec)",
     "color": "Negro",
@@ -567,12 +581,13 @@ const PRODUCTS = [
     "warnings": "Desconectar de la corriente una vez cargado si se usa en modo batería.",
     "fun_fact": "El nombre \"LT-IPHONE 6\" es una marca fantasía vintage comercializada por el fabricante.",
     "image": "assets/images/productos/oficial/36 - Radio Reproductor Portátil/36 - Radio Reproductor Portátil - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "37",
     "name": "Antena Digital HDTV",
-    "price": 45.0,
-    "min_price": 30.0,
+    "price": 45,
+    "min_price": 30,
     "category": "Tecnología",
     "brand": "Hochauflösende TV-Antenne",
     "color": "Negro",
@@ -582,12 +597,13 @@ const PRODUCTS = [
     "warnings": "Colocar lo más cerca posible de ventanas para mejor recepción de señal.",
     "fun_fact": "Su base imantada permite fijarla firmemente a protecciones metálicas de ventanas.",
     "image": "assets/images/productos/oficial/37 - Antena Digital HDTV/37 - Antena Digital HDTV - 01.jpg",
+    "estado": "vendido"
   },
   {
     "id": "38",
     "name": "Audífonos TWS In-Ear (Pro Genérico)",
-    "price": 50.0,
-    "min_price": 35.0,
+    "price": 50,
+    "min_price": 35,
     "category": "Audio",
     "brand": "Pro (Earbuds TWS)",
     "color": "Negro Brillante",
@@ -597,13 +613,13 @@ const PRODUCTS = [
     "warnings": "Limpiar gomas de silicona frecuentemente por higiene.",
     "fun_fact": "Tienen estuche con ajuste imantado que atrae los earbuds a su posición de carga.",
     "image": "assets/images/productos/oficial/38 - Audífonos TWS In-Ear (Pro Genérico)/38 - Audífonos TWS In-Ear (Pro Genérico) - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "39",
     "name": "Mini Ventilador de Bolsillo",
-    "price": 38.0,
-    "min_price": 30.0,
+    "price": 38,
+    "min_price": 30,
     "category": "Hogar",
     "brand": "Pocket Fan",
     "color": "Blanco (con orejitas)",
@@ -618,8 +634,8 @@ const PRODUCTS = [
   {
     "id": "40",
     "name": "Proyector de Luces LED - Varios",
-    "price": 65.0,
-    "min_price": 60.0,
+    "price": 65,
+    "min_price": 60,
     "category": "Decoración / Regalos",
     "brand": "LED Projection Light",
     "color": "Negro (Proyección Multicolor)",
@@ -634,8 +650,8 @@ const PRODUCTS = [
   {
     "id": "41",
     "name": "Buclera Enruladora Rizadora",
-    "price": 30.0,
-    "min_price": 20.0,
+    "price": 30,
+    "min_price": 20,
     "category": "Cuidado Personal",
     "brand": "Varios",
     "color": "Varios",
@@ -645,5 +661,6 @@ const PRODUCTS = [
     "warnings": "Vender sin garantía declarando fallas.",
     "fun_fact": "Recuperar monetario de mercadería dañada.",
     "image": "assets/images/productos/oficial/41 - Buclera Enruladora Rizadora/41 - Buclera Enruladora Rizadora - 01.jpg",
+    "estado": "vendido"
   }
 ];
