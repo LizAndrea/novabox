@@ -37,7 +37,7 @@ const PRODUCTS = [
     "warnings": "Asegurar buena cobertura del operador móvil seleccionado.",
     "fun_fact": "Funciona totalmente aislada de la red eléctrica gracias a su panel solar.",
     "image": "assets/images/productos/oficial/02 - Cámara PTZ Solar 4G/02 - Cámara PTZ Solar 4G - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "3",
@@ -85,7 +85,7 @@ const PRODUCTS = [
     "warnings": "No girar la bola plástica superior con la mano forzando el motor.",
     "fun_fact": "El sensor de micrófono interno ajusta el destello de la luz al ritmo del bajo.",
     "image": "assets/images/productos/oficial/05 - Luces Mágica con Parlante/05 - Luces Mágica con Parlante - arriba.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "6",
@@ -117,7 +117,7 @@ const PRODUCTS = [
     "warnings": "Mantener limpios los pines dorados de carga en la base del estuche.",
     "fun_fact": "Cuentan con encendido y conexión automática apenas abres la tapa del estuche.",
     "image": "assets/images/productos/oficial/07 -Audifonos TWS ColorNow/07 -Audifonos TWS ColorNow - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "8",
@@ -165,7 +165,7 @@ const PRODUCTS = [
     "warnings": "Evitar caídas del estuche acrílico para no rayar o fisurar la transparencia.",
     "fun_fact": "Muestra el porcentaje exacto de batería restante en número digital dentro del estuche.",
     "image": "assets/images/productos/oficial/10 - Audífonos TWS Ultrapods Pro/10 - Audífonos TWS Ultrapods Pro - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "11",
@@ -197,7 +197,7 @@ const PRODUCTS = [
     "warnings": "Evitar caídas e impactos fuertes en el cono del parlante.",
     "fun_fact": "Incorpora radio FM integrada mediante la conexión del cable de carga como antena.",
     "image": "assets/images/productos/oficial/12 - Parlante Bluetooth Compacto - X1 Music Engine 3202/12 - Parlante Bluetooth Compacto - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "13",
@@ -213,7 +213,7 @@ const PRODUCTS = [
     "warnings": "Guardar bajo techo en tormentas extremas.",
     "fun_fact": "El cuerpo cristalino difumina la luz creando un brillo omnidireccional.",
     "image": "assets/images/productos/oficial/13 - Muñeco de Nieve LED Solar/13 - Muñeco de Nieve LED Solar - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "14",
@@ -245,7 +245,7 @@ const PRODUCTS = [
     "warnings": "No tirar con fuerza de los cables delgados de las gomas.",
     "fun_fact": "Los earbuds se unen entre sí por imán para que no bamboleen cuando no los usas.",
     "image": "assets/images/productos/oficial/15 - Audífonos Inalámbricos Deportivos/15 - Audífonos Inalámbricos Deportivos - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "16",
@@ -261,7 +261,7 @@ const PRODUCTS = [
     "warnings": "Cargar con cable USB; NO es sumergible en agua.",
     "fun_fact": "Funciona tanto de forma independiente (con SIM) como de accesorio del celular.",
     "image": "assets/images/productos/oficial/16 - Smartwatch Phone Cuadrado/16 - Smartwatch Phone Cuadrado - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "17",
@@ -389,7 +389,7 @@ const PRODUCTS = [
     "warnings": "Lavar y esterilizar en agua hirviendo después de cada uso.",
     "fun_fact": "El diseño de la copa imita la succión natural del bebé para estimular la leche.",
     "image": "assets/images/productos/oficial/24 - Extractor de Leche Materna/24 - Extractor de Leche Materna - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "25",
@@ -405,7 +405,7 @@ const PRODUCTS = [
     "warnings": "No cubrir el panel con ramas ni techos.",
     "fun_fact": "Incluye sensor de movimiento y temporizador mediante control remoto.",
     "image": "assets/images/productos/oficial/25 - Reflector Solar LED IP66/25 - Reflector Solar LED IP66 - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "26",
@@ -421,7 +421,7 @@ const PRODUCTS = [
     "warnings": "No lavar con agua ni doblar bruscamente para no romper los cables internos.",
     "fun_fact": "Los LED están colocados estratégicamente en las luces de los árboles y estrellas.",
     "image": "assets/images/productos/oficial/26 - Lienzo - Tapiz Navideño LED/26 - Lienzo - Tapiz Navideño LED - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "27",
@@ -453,7 +453,7 @@ const PRODUCTS = [
     "warnings": "Limpiar la superficie del panel para evitar acumulación de tierra.",
     "fun_fact": "Diseñada en resina sintética que imita piedra real para resistir la intemperie.",
     "image": "assets/images/productos/oficial/28 - Lampara Solar Conmemorativa/28 - Lampara Solar Conmemorativa - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "29",
@@ -517,7 +517,7 @@ const PRODUCTS = [
     "warnings": "Cargar con adaptadores estándar de 5V 1A.",
     "fun_fact": "Se pueden emparejar dos parlantes M3 al mismo celular para sonido estéreo TWS.",
     "image": "assets/images/productos/oficial/32 - Mini Parlante M3 Metalizado/32 - Mini Parlante M3 Metalizado - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "33",
@@ -549,7 +549,7 @@ const PRODUCTS = [
     "warnings": "Solo funciona en ambientes oscuros para ahorrar energía.",
     "fun_fact": "Apagado automático a los 15-20 segundos de no detectar movimiento.",
     "image": "assets/images/productos/oficial/34 - Luz Nocturna LED con Sensor/34 - Luz Nocturna LED con Sensor - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "35",
@@ -565,7 +565,7 @@ const PRODUCTS = [
     "warnings": "Nunca encender sin agua en el depósito inferior para no quemar la resistencia.",
     "fun_fact": "Mantiene el biberón tibio a 40°C automáticamente durante toda la noche.",
     "image": "assets/images/productos/oficial/35 - Calentador y Esterilizador (Disney)/35 - Calentador y Esterilizador (Disney) - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "36",
@@ -613,7 +613,7 @@ const PRODUCTS = [
     "warnings": "Limpiar gomas de silicona frecuentemente por higiene.",
     "fun_fact": "Tienen estuche con ajuste imantado que atrae los earbuds a su posición de carga.",
     "image": "assets/images/productos/oficial/38 - Audífonos TWS In-Ear (Pro Genérico)/38 - Audífonos TWS In-Ear (Pro Genérico) - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "39",
