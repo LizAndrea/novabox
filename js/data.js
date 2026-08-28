@@ -69,7 +69,6 @@ const PRODUCTS = [
     "warnings": "Limpiar el panel solar si se llena de polvo para no perder eficiencia.",
     "fun_fact": "Tienen sensor fotovoltaico: se encienden solas al anochecer y se apagan al amanecer.",
     "image": "assets/images/productos/oficial/04 - Luces LED Calabaza Solares/04 - Luces de calabaza Solar - Prendido.jpg",
-    "estado": "vendido"
   },
   {
     "id": "5",
@@ -101,7 +100,6 @@ const PRODUCTS = [
     "warnings": "Usar sobre pad mouse para no desgastar los deslizadores inferiores.",
     "fun_fact": "Permite alternar de la Laptop de trabajo a la Tablet con presionar un botón.",
     "image": "assets/images/productos/oficial/06 - Mouse Inalámbrico Tri-Modo/06 - Mouse Inalámbrico Tri-Modo - Caja.jpg",
-    "estado": "vendido"
   },
   {
     "id": "7",
@@ -133,7 +131,6 @@ const PRODUCTS = [
     "warnings": "Limpiar almohadillas con paño ligeramente húmedo; no doblar bruscamente.",
     "fun_fact": "Permite conexión vía cable AUX 3.5mm si te quedas sin batería.",
     "image": "assets/images/productos/oficial/08 - Audífonos SY-T2 Bluetooth - Wired Headset/08 - Audífonos SY-T2 Bluetooth - Wired Headset-clean.jpg",
-    "estado": "vendido"
   },
   {
     "id": "9",
@@ -149,7 +146,6 @@ const PRODUCTS = [
     "warnings": "No usar la función de calentador mientras estés cargando la batería en el enchufe.",
     "fun_fact": "Alcanza temperaturas reconfortantes entre 45°C y 55°C en solo 5 segundos.",
     "image": "assets/images/productos/oficial/09 - Calentador de Manos + PowerBank/09 - Calentador de Manos + PowerBank - manos.jpg",
-    "estado": "vendido"
   },
   {
     "id": "10",
@@ -181,7 +177,6 @@ const PRODUCTS = [
     "warnings": "El panel debe recibir al menos 6 horas de sol directo para brillar toda la noche.",
     "fun_fact": "El acrílico burbuja es ultra resistente a caídas y granizo leve.",
     "image": "assets/images/productos/oficial/11 - Bola de burbuja solar luz Led/11 - Bola de burbuja solar luz Led - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "12",
@@ -229,7 +224,6 @@ const PRODUCTS = [
     "warnings": "Guardar en estuche para evitar rozaduras en el acabado brillante.",
     "fun_fact": "Su estructura es plegable hacia adentro para ocupar la mitad del espacio.",
     "image": "assets/images/productos/oficial/14 - Audífonos On-Ear Q50/14 - Audífonos On-Ear Q50 - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "15",
@@ -277,7 +271,6 @@ const PRODUCTS = [
     "warnings": "Evitar caídas fuertes que descalibren la pantalla LCD.",
     "fun_fact": "Utiliza cromoterapia básica (cambio de luz suave) para ayudar a conciliar el sueño.",
     "image": "assets/images/productos/oficial/17 - Reloj Despertador Digital LED/17 - Reloj Despertador Digital LED - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "18",
@@ -293,7 +286,6 @@ const PRODUCTS = [
     "warnings": "Resistente a salpicaduras, pero NO sumergible bajo el agua.",
     "fun_fact": "Incluye botones integrados para contestar llamadas en manos libres.",
     "image": "assets/images/productos/oficial/18 - Parlante Bluetooth para Ducha/18 - Parlante Bluetooth para Ducha - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "19",
@@ -325,7 +317,6 @@ const PRODUCTS = [
     "warnings": "Limpiar con paño de microfibra seco para evitar rayones en el acrílico.",
     "fun_fact": "El grabado geométrico proyecta una rosa o estrella de luz a su alrededor.",
     "image": "assets/images/productos/oficial/20 - Lámpara de Mesa Cristal (Diamante)/20 - Lámpara de Mesa Cristal (Diamante) - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "21",
@@ -357,7 +348,6 @@ const PRODUCTS = [
     "warnings": "Limpiar sensor óptico con aire comprimido o hisopo seco.",
     "fun_fact": "El sensor HERO consume 10 veces menos energía que sensores anteriores.",
     "image": "assets/images/productos/oficial/22 - Mouse Gamer G305 (Genérico)/22 - Mouse Gamer G305 (Genérico) - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "23",
@@ -373,7 +363,6 @@ const PRODUCTS = [
     "warnings": "No mojar en exceso si la tapa del puerto de carga está abierta.",
     "fun_fact": "El marco de mosquetón rodea todo el perímetro del parlante dándole rigidez.",
     "image": "assets/images/productos/oficial/23 - Parlante Portátil (Clip 3 Estilo)/23 - Parlante Portátil (Clip 3 Estilo) - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "24",
@@ -437,7 +426,6 @@ const PRODUCTS = [
     "warnings": "Apagar el switch inferior al guardar en la mochila para ahorrar pila.",
     "fun_fact": "Guardado interno: el receptor USB se almacena dentro del compartimento de pilas.",
     "image": "assets/images/productos/oficial/27 - Mouse Inalámbrico Ergonómico/27 - Mouse Inalámbrico Ergonómico - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "28",
@@ -485,7 +473,6 @@ const PRODUCTS = [
     "warnings": "Evitar caídas que desalineen el sensor óptico inferior.",
     "fun_fact": "El botón DPI altera la velocidad del puntero al instante sin ir a configuración de la PC.",
     "image": "assets/images/productos/oficial/30 - Mouse Gamer RGB (X9)/30 - Mouse Gamer RGB (X9) - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "31",
@@ -533,7 +520,6 @@ const PRODUCTS = [
     "warnings": "Proteger de lluvia directa prolongada si la entrada no tiene alero.",
     "fun_fact": "Permite distorsionar la voz en tiempo real para mayor seguridad en la llamada.",
     "image": "assets/images/productos/oficial/33 - Timbre Inteligente con Cámara/33 - Timbre Inteligente con Cámara - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "34",
@@ -581,7 +567,6 @@ const PRODUCTS = [
     "warnings": "Desconectar de la corriente una vez cargado si se usa en modo batería.",
     "fun_fact": "El nombre \"LT-IPHONE 6\" es una marca fantasía vintage comercializada por el fabricante.",
     "image": "assets/images/productos/oficial/36 - Radio Reproductor Portátil/36 - Radio Reproductor Portátil - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "37",
@@ -597,7 +582,6 @@ const PRODUCTS = [
     "warnings": "Colocar lo más cerca posible de ventanas para mejor recepción de señal.",
     "fun_fact": "Su base imantada permite fijarla firmemente a protecciones metálicas de ventanas.",
     "image": "assets/images/productos/oficial/37 - Antena Digital HDTV/37 - Antena Digital HDTV - 01.jpg",
-    "estado": "vendido"
   },
   {
     "id": "38",
@@ -661,6 +645,5 @@ const PRODUCTS = [
     "warnings": "Vender sin garantía declarando fallas.",
     "fun_fact": "Recuperar monetario de mercadería dañada.",
     "image": "assets/images/productos/oficial/41 - Buclera Enruladora Rizadora/41 - Buclera Enruladora Rizadora - 01.jpg",
-    "estado": "vendido"
   }
 ];
