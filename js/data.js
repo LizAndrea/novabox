@@ -277,7 +277,7 @@ const PRODUCTS = [
     "warnings": "Evitar caídas fuertes que descalibren la pantalla LCD.",
     "fun_fact": "Utiliza cromoterapia básica (cambio de luz suave) para ayudar a conciliar el sueño.",
     "image": "assets/images/productos/oficial/17 - Reloj Despertador Digital LED/17 - Reloj Despertador Digital LED - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "18",
@@ -437,7 +437,7 @@ const PRODUCTS = [
     "warnings": "Apagar el switch inferior al guardar en la mochila para ahorrar pila.",
     "fun_fact": "Guardado interno: el receptor USB se almacena dentro del compartimento de pilas.",
     "image": "assets/images/productos/oficial/27 - Mouse Inalámbrico Ergonómico/27 - Mouse Inalámbrico Ergonómico - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "28",
@@ -581,7 +581,7 @@ const PRODUCTS = [
     "warnings": "Desconectar de la corriente una vez cargado si se usa en modo batería.",
     "fun_fact": "El nombre \"LT-IPHONE 6\" es una marca fantasía vintage comercializada por el fabricante.",
     "image": "assets/images/productos/oficial/36 - Radio Reproductor Portátil/36 - Radio Reproductor Portátil - 01.jpg",
-    "estado": "con detalle"
+    "estado": "vendido"
   },
   {
     "id": "37",
@@ -661,6 +661,6 @@ const PRODUCTS = [
     "warnings": "Vender sin garantía declarando fallas.",
     "fun_fact": "Recuperar monetario de mercadería dañada.",
     "image": "assets/images/productos/oficial/41 - Buclera Enruladora Rizadora/41 - Buclera Enruladora Rizadora - 01.jpg",
-    "estado": "con detalle"
+    "estado": "vendido"
   }
 ];
