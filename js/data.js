@@ -148,8 +148,8 @@ const PRODUCTS = [
     "instructions": "1. Mantener presionado para activar calor. 2. Conectar cable USB para cargar el celular.",
     "warnings": "No usar la función de calentador mientras estés cargando la batería en el enchufe.",
     "fun_fact": "Alcanza temperaturas reconfortantes entre 45°C y 55°C en solo 5 segundos.",
-    "image": "assets/images/productos/oficial/09 - Calentador de Manos + PowerBank/09 - Calentador de Manos + PowerBank - manos.jpg",
-    "estado": "vendido"
+    "image": "assets/images/productos/oficial/09 - Calentador de Manos + PowerBank/09 - Calentador de Manos + PowerBank.jpg",
+    "estado": ""
   },
   {
     "id": "10",
@@ -245,7 +245,7 @@ const PRODUCTS = [
     "warnings": "No tirar con fuerza de los cables delgados de las gomas.",
     "fun_fact": "Los earbuds se unen entre sí por imán para que no bamboleen cuando no los usas.",
     "image": "assets/images/productos/oficial/15 - Audífonos Inalámbricos Deportivos/15 - Audífonos Inalámbricos Deportivos - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "16",
@@ -517,7 +517,7 @@ const PRODUCTS = [
     "warnings": "Cargar con adaptadores estándar de 5V 1A.",
     "fun_fact": "Se pueden emparejar dos parlantes M3 al mismo celular para sonido estéreo TWS.",
     "image": "assets/images/productos/oficial/32 - Mini Parlante M3 Metalizado/32 - Mini Parlante M3 Metalizado - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "33",
