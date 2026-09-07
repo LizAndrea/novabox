@@ -149,7 +149,7 @@ const PRODUCTS = [
     "warnings": "No usar la función de calentador mientras estés cargando la batería en el enchufe.",
     "fun_fact": "Alcanza temperaturas reconfortantes entre 45°C y 55°C en solo 5 segundos.",
     "image": "assets/images/productos/oficial/09 - Calentador de Manos + PowerBank/09 - Calentador de Manos + PowerBank.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "10",
@@ -245,7 +245,7 @@ const PRODUCTS = [
     "warnings": "No tirar con fuerza de los cables delgados de las gomas.",
     "fun_fact": "Los earbuds se unen entre sí por imán para que no bamboleen cuando no los usas.",
     "image": "assets/images/productos/oficial/15 - Audífonos Inalámbricos Deportivos/15 - Audífonos Inalámbricos Deportivos - 01.jpg",
-    "estado": "vendido"
+    "estado": ""
   },
   {
     "id": "16",
@@ -261,7 +261,7 @@ const PRODUCTS = [
     "warnings": "Cargar con cable USB; NO es sumergible en agua.",
     "fun_fact": "Funciona tanto de forma independiente (con SIM) como de accesorio del celular.",
     "image": "assets/images/productos/oficial/16 - Smartwatch Phone Cuadrado/16 - Smartwatch Phone Cuadrado - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "17",
@@ -453,7 +453,7 @@ const PRODUCTS = [
     "warnings": "Limpiar la superficie del panel para evitar acumulación de tierra.",
     "fun_fact": "Diseñada en resina sintética que imita piedra real para resistir la intemperie.",
     "image": "assets/images/productos/oficial/28 - Lampara Solar Conmemorativa/28 - Lampara Solar Conmemorativa - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "29",
