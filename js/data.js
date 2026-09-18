@@ -213,7 +213,7 @@ const PRODUCTS = [
     "warnings": "Guardar bajo techo en tormentas extremas.",
     "fun_fact": "El cuerpo cristalino difumina la luz creando un brillo omnidireccional.",
     "image": "assets/images/productos/oficial/13 - Muñeco de Nieve LED Solar/13 - Muñeco de Nieve LED Solar - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "14",
