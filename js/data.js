@@ -85,7 +85,7 @@ const PRODUCTS = [
     "warnings": "No girar la bola plástica superior con la mano forzando el motor.",
     "fun_fact": "El sensor de micrófono interno ajusta el destello de la luz al ritmo del bajo.",
     "image": "assets/images/productos/oficial/05 - Luces Mágica con Parlante/05 - Luces Mágica con Parlante - arriba.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "6",
@@ -245,7 +245,7 @@ const PRODUCTS = [
     "warnings": "No tirar con fuerza de los cables delgados de las gomas.",
     "fun_fact": "Los earbuds se unen entre sí por imán para que no bamboleen cuando no los usas.",
     "image": "assets/images/productos/oficial/15 - Audífonos Inalámbricos Deportivos/15 - Audífonos Inalámbricos Deportivos - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "16",
@@ -309,7 +309,7 @@ const PRODUCTS = [
     "warnings": "Quitar el film protector antes de usar; no tocar el acrílico para no dejar huellas.",
     "fun_fact": "La placa es completamente plana (2D), pero el grabado engaña al cerebro simulando 3D.",
     "image": "assets/images/productos/oficial/19 - Lámpara LED 3D Ilusión Óptica/19 - Lámpara LED 3D Ilusión Óptica - 01.jpg",
-    "estado": "detalle"
+    "estado": "vendido"
   },
   {
     "id": "20",
@@ -405,7 +405,7 @@ const PRODUCTS = [
     "warnings": "No cubrir el panel con ramas ni techos.",
     "fun_fact": "Incluye sensor de movimiento y temporizador mediante control remoto.",
     "image": "assets/images/productos/oficial/25 - Reflector Solar LED IP66/25 - Reflector Solar LED IP66 - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "26",
