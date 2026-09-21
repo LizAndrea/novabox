@@ -117,7 +117,7 @@ const PRODUCTS = [
     "warnings": "Mantener limpios los pines dorados de carga en la base del estuche.",
     "fun_fact": "Cuentan con encendido y conexión automática apenas abres la tapa del estuche.",
     "image": "assets/images/productos/oficial/07 -Audifonos TWS ColorNow/07 -Audifonos TWS ColorNow - 01.jpg",
-    "estado": ""
+    "estado": "vendido"
   },
   {
     "id": "8",
