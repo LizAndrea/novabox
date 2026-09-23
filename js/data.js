@@ -1242,6 +1242,23 @@ const PRODUCTS = [
     "description": "Luz decorativa en forma de F con iluminación LED RGB multicolor, funcional al conectarse a un cargador de pared estándar."
   },
   {
+    "id": "76",
+    "name": "Oxímetro de Pulso Digital de Dedo",
+    "price": 150,
+    "min_price": 100,
+    "category": "Cuidado Personal & Salud",
+    "brand": "JUMPER / JPD-500G",
+    "color": "Negro",
+    "features": "Medidor digital de saturación de oxígeno (%SpO2), frecuencia cardíaca (bpmPR) e índice de perfusión (PI%). Pantalla LED nítida, incluye estuche y cordón de transporte.",
+    "power": "2 Pilas AAA",
+    "instructions": "N/A",
+    "warnings": "N/A",
+    "fun_fact": "N/A",
+    "image": "assets/images/productos/oficial/ataud01/76.jpg",
+    "estado": "",
+    "description": "Medidor avanzado de saturación de oxígeno, frecuencia cardíaca e índice de perfusión. Posee pantalla LED de alta nitidez e incluye estuche.\\n\\n* Oxímetro de Pulso Certificado por La CE.\\n\\n* Conexión a Bluetooth.\\n\\n* La Aplicación puede ser descargada desde dispositivos Android y IPhone.\\n\\n* Recomendado para Adultos.\\n\\n* Encendido: Botón ubicado en la Zona delantera del producto.\\n\\n* Apagado: Automático, Luego de 6 Segundos sin uso.\\n\\n* Mide parámetros de Saturación (%Sp02), Frecuencia Cardíaca (bpmPR) e Índice de Perfusión (PI%).\\n\\n* Barra de Pulso.\\n\\n* Rango de medición de La Saturación: 35% - 99%.\\n\\n* Rango de medición de La Frecuencia Cardíaca: 35 bpm - 250 bpm.\\n\\n* Rango de medición del Índice de Perfusión: 0% - 20%.\\n\\n* Pantalla tipo LED de 1 Color.\\n\\n* Utiliza 2 Pilas AAA.\\n\\n* Dimensiones: 58 mm * 32 mm * 32,9 mm.\\n\\n* Peso: 50,4 Gramos.\\n\\n* Temperatura de Funcionamiento: 5°C - 40°C."
+  },
+  {
     "id": "77",
     "name": "Tira de Luces LED con Sensor",
     "price": 90,

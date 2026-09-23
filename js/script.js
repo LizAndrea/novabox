@@ -33,6 +33,25 @@ function renderPhones() {
     return true;
   });
 
+  // Estrategia de visualización:
+  // 1. Agrupar por categorías.
+  // 2. Mostrar "Seguridad & Domótica" primero.
+  // 3. El resto de categorías en orden alfabético.
+  // 4. Dentro de cada categoría, ordenar por ID descendente.
+  filtered.sort((a, b) => {
+    const catA = a.category || '';
+    const catB = b.category || '';
+    
+    if (catA !== catB) {
+      if (catA === 'Tecnología & Computación') return -1;
+      if (catB === 'Tecnología & Computación') return 1;
+      return catA.localeCompare(catB);
+    }
+    
+    // Si son de la misma categoría, usar ID descendente como orden secundario
+    return parseInt(b.id) - parseInt(a.id);
+  });
+
   if (filtered.length === 0) {
     container.innerHTML = '';
     noRes.classList.remove('hidden');
