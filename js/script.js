@@ -165,11 +165,12 @@ function openDetail(id) {
         <!-- Large Text Area for description -->
         <div class="text-deep-coffee text-xs md:text-sm leading-relaxed mb-4 md:mb-6 bg-ice-grey p-3 md:p-5 rounded-lg md:rounded-xl border border-slate-700 max-h-[160px] md:max-h-[200px] overflow-y-auto shadow-inner">
           <p><strong>Características:</strong> ${p.features || 'No especificado'}</p>
-          ${p.instructions ? `<p class="mt-2"><strong>Instrucciones:</strong> ${p.instructions}</p>` : ''}
-          ${p.warnings ? `<p class="mt-2 text-red-600"><strong>⚠️ Cuidados:</strong> ${p.warnings}</p>` : ''}
+          ${p.description && p.description !== "N/A" ? `<p class="mt-2"><strong>Descripción:</strong> ${p.description}</p>` : ''}
+          ${p.instructions && p.instructions !== "N/A" ? `<p class="mt-2"><strong>Instrucciones:</strong> ${p.instructions}</p>` : ''}
+          ${p.warnings && p.warnings !== "N/A" ? `<p class="mt-2 text-red-600"><strong>⚠️ Cuidados:</strong> ${p.warnings}</p>` : ''}
         </div>
 
-        ${p.fun_fact ? `
+        ${p.fun_fact && p.fun_fact !== "N/A" ? `
         <div class="mb-4 md:mb-6 bg-amber-50 border-l-4 border-amber-400 p-3 md:p-4 rounded-r-lg md:rounded-r-xl">
           <p class="text-[0.65rem] md:text-xs text-amber-800 font-bold uppercase tracking-wider mb-0.5 md:mb-1">💡 ¿Sabías que?</p>
           <p class="text-xs md:text-sm text-amber-900">${p.fun_fact}</p>
