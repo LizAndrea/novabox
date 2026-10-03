@@ -34,22 +34,19 @@ function renderPhones() {
   });
 
   // Estrategia de visualización:
-  // 1. Agrupar por categorías.
-  // 2. Mostrar "Seguridad & Domótica" primero.
-  // 3. El resto de categorías en orden alfabético.
-  // 4. Dentro de cada categoría, ordenar por ID descendente.
+  // 1. Mostrar los productos disponibles (no vendidos) primero.
+  // 2. Mostrar los productos vendidos después.
+  // 3. Dentro de cada grupo, ordenar por ID ascendente.
   filtered.sort((a, b) => {
-    const catA = a.category || '';
-    const catB = b.category || '';
+    const estadoA = (a.estado || '').toLowerCase() === 'vendido' ? 1 : 0;
+    const estadoB = (b.estado || '').toLowerCase() === 'vendido' ? 1 : 0;
     
-    if (catA !== catB) {
-      if (catA === 'Tecnología & Computación') return -1;
-      if (catB === 'Tecnología & Computación') return 1;
-      return catA.localeCompare(catB);
+    if (estadoA !== estadoB) {
+      return estadoA - estadoB; // 0 (disponible) viene antes que 1 (vendido)
     }
     
-    // Si son de la misma categoría, usar ID descendente como orden secundario
-    return parseInt(b.id) - parseInt(a.id);
+    // Si tienen el mismo estado, ordenar por ID ascendente
+    return parseInt(a.id) - parseInt(b.id);
   });
 
   if (filtered.length === 0) {
