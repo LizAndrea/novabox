@@ -4,48 +4,48 @@
     "name": "Audio",
     "detail": "Siente Cada Ritmo. Tu Música sin Límites.",
     "color": "#3b82f6",
-    "iconImage": "1s.png"
+    "iconImage": "cat-01.png"
   },
   {
     "id": "2",
     "name": "Cuidado Personal & Salud",
     "detail": "Tu Rutina Diaria de Bienestar y Estilo",
     "color": "#ec4899",
-    "iconImage": "2s.png"
+    "iconImage": "cat-02.png"
   },
   {
     "id": "3",
     "name": "Decoración & Regalos",
     "detail": "Detalles Únicos para Espacios Especiales",
     "color": "#f59e0b",
-    "iconImage": "3s.png"
+    "iconImage": "cat-03.png"
   },
   {
     "id": "4",
     "name": "Hogar & Iluminación",
     "detail": "Haz de Tu Casa el Lugar Más Cómodo.",
     "color": "#10b981",
-    "iconImage": "4s.png"
+    "iconImage": "cat-04.png"
   },
   {
     "id": "5",
     "name": "Seguridad & Domótica",
     "detail": "Tu Casa Protegida, Estés Donde Estés.",
     "color": "#6366f1",
-    "iconImage": "5s.png"
+    "iconImage": "cat-05.png"
   },
   {
     "id": "6",
     "name": "Tecnología & Computación",
     "detail": "Gadgets Innovadores para Tu Estilo de Vida",
     "color": "#8b5cf6",
-    "iconImage": "6s.png"
+    "iconImage": "cat-06.png"
   },
   {
     "id": "7",
     "name": "Herramientas",
     "detail": "Todo lo necesario para tus proyectos.",
     "color": "#f97316",
-    "iconImage": "7s.png"
+    "iconImage": "cat-07.png"
   }
 ]
